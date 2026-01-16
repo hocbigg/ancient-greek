@@ -1,4 +1,4 @@
-# Ancient Greek - Resources
+# Resources
 
 ## Vocabulary
 
@@ -67,3 +67,7 @@
 - **Introduction to Ancient Greek History (Open Yale Courses)**  
   [oyc.yale.edu/classics/clcv-205](https://oyc.yale.edu/classics/clcv-205)  
   Full video lecture series by Donald Kagan tracing Greek civilization from the Bronze Age to the Classical period, with transcripts and readings.
+
+## Other
+
+- [Learning Ancient Greek - Faculty of Arts and Social Sciences](https://fass.open.ac.uk/classical-studies/learning-ancient-greek)
