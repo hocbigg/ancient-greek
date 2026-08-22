@@ -48,26 +48,30 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
 
 # Curriculum
 
-- [Foundations of Ancient Greek Attic](#foundations-of-ancient-greek-attic)
-    - [Core Grammar](#a-core-grammar)
-    - [Reading Support](#b-reading-support)
-- [Attic Prose Mastery](#attic-prose-mastery)
-    - [Core Prose](#a-core-prose)
-    - [Advanced Syntax](#b-advanced-syntax)
+- [Foundations of Ancient Greek (Attic)](#foundations-of-ancient-greek-attic)
+    - [Core Grammar](#core-grammar)
+    - [Reading Support & Lexical Tools](#reading-support--lexical-tools)
+- [Intermediate Attic Prose & Syntax](#intermediate-attic-prose--syntax)
+    - [Core Prose & Historiography](#core-prose--historiography)
+    - [Advanced Syntax & Composition](#advanced-syntax--composition)
+- [Classical Philosophy: Plato](#classical-philosophy-plato)
+- [Classical Greek Poetry: Epic & Attic Drama](#classical-greek-poetry-epic--attic-drama)
 - [Historical & Cultural Context](#historical--cultural-context)
-- [Philosophy](#philosophy)
 
-1. Foundations of Ancient Greek (Attic)  
-   Start here. This section teaches you how to read and understand basic to intermediate Attic Greek (the standard dialect of classical Athens). Without these grammar and reading skills, the rest of the roadmap will be very difficult.
+1. Foundations of Ancient Greek (Attic)
+   Start here. This stage teaches the core morphology, nominal declensions, verbal conjugations, and basic syntax of classical Attic Greek. Mastering these elements is mandatory before approaching continuous ancient texts.
 
-2. Attic Prose Mastery  
-   Immediately after Foundations. This section builds your ability to read real, unadapted classical Greek prose confidently and introduces more advanced sentence structures.
+2. Intermediate Attic Prose & Syntax
+   Immediately after Foundations. This stage builds reading fluency through continuous, unadapted classical prose (Xenophon, Lysias) while reinforcing syntactic mastery through active prose composition and syntax reference study.
 
-3. Historical & Cultural Context  
-   Study this while or right after working through Attic Prose. It gives you the historical and literary background that makes the texts you are reading meaningful.
+3. Classical Philosophy: Plato
+   Tackle this next. Plato's early and middle dialogues represent the pinnacle of classical Attic dialogue and philosophical argument. Reading Plato solidifies intermediate prose comprehension and introduces central concepts of Greek thought.
 
-4. Philosophy  
-   Tackle this next. Plato and Aristotle wrote in clear, influential Attic prose. By this point you will have the language skills to read them in the original with growing confidence, and their works are central to understanding classical Greek thought.
+4. Classical Greek Poetry: Epic & Attic Drama
+   Study this after establishing solid prose fluency. This stage introduces the Homeric/Epic dialect, dactylic hexameter, and Attic tragedy (Euripides, Sophocles) with iambic trimeter and lyric meters.
+
+5. Historical & Cultural Context
+   Study this alongside or directly following your language coursework. It provides the historical, political, and literary framework necessary to interpret classical texts in their historical context.
 
 ## Foundations of Ancient Greek (Attic)
 
@@ -75,48 +79,55 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
 
 | Subject | Resource |
 | --- | --- |
-| Attic Greek Grammar (Beginner & Intermediate) | - [Hansen & Quinn, *Greek: An Intensive Course*](https://archive.org/details/greekintensiveco0000hans)<br/>- [Harvard / Brandeis Ancient Greek](https://www.openculture.com/2016/12/introduction-to-ancient-greek-history-a-free-online-course-from-yale.html) |
-| Reference grammar | [Smyth, *Greek Grammar*](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0007) (Perseus) |
-| Morphology & dictionary | [Logeion (Chicago)](https://logeion.uchicago.edu/) |
+| Attic Greek Grammar (Beginner & Intermediate) | - [Hansen & Quinn, *Greek: An Intensive Course*](https://archive.org/details/greekintensiveco0000hans)<br/>- Donald J. Mastronarde, *Introduction to Attic Greek* (University of California Press)<br/>- [Ancient Greek Tutorials (Mastronarde / UC Berkeley)](https://atticgreek.org/) |
+| Comprehensive Reference Grammar | [Smyth, *Greek Grammar*](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0007) (Perseus Digital Library) |
+| Lexica & Morphological Tools | - [Logeion Lexicon Database (University of Chicago)](https://logeion.uchicago.edu/)<br/>- [DCC Greek Core Vocabulary (Dickinson College Commentaries)](https://dcc.dickinson.edu/greek-core-list) |
 
-### Reading Support
+### Reading Support & Lexical Tools
 
 | Tool | Resource |
 | --- | --- |
-| Beginner-friendly annotated texts | [Dickinson College Commentaries (DCC)](https://dcc.dickinson.edu/) |
-| Texts, lexicon, morphology | [Perseus Digital Library](https://www.perseus.tufts.edu/hopper/) |
+| Annotated Student Commentaries | - [Dickinson College Commentaries (DCC)](https://dcc.dickinson.edu/)<br/>- [Geoffrey Steadman, *Greek Texts with Facing Vocabulary and Commentary*](https://geoffreysteadman.com/) |
+| Text Corpus & Lemmatizer | [Perseus Digital Library](https://www.perseus.tufts.edu/hopper/) |
 
-## Attic Prose Mastery
+## Intermediate Attic Prose & Syntax
 
-### Core Prose
+### Core Prose & Historiography
 
-| Author | Resources |
-|---|---|
-| Xenophon | [Anabasis (Perseus + DCC)](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0202) |
-| Lysias | [Selected speeches (Perseus)](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:author-Lysias) |
+| Author & Genre | Resources |
+| --- | --- |
+| Xenophon (Historical Narrative) | - [Xenophon, *Anabasis* (Perseus)](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0202)<br/>- [Geoffrey Steadman, *Xenophon's Anabasis I & IV*](https://geoffreysteadman.com/) |
+| Lysias (Forensic Oratory) | - [Lysias, *Selected Speeches* (Perseus)](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:author-Lysias)<br/>- [Geoffrey Steadman, *Lysias I: On the Murder of Eratosthenes*](https://geoffreysteadman.com/) |
+| Herodotus & Thucydides (Historiography Survey) | [Greco-Roman Collection (Perseus)](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman) |
 
-### Advanced Syntax
+### Advanced Syntax & Composition
 
 | Subject | Resource |
 | --- | --- |
-| Greek syntax | Smyth + Hansen & Quinn |
-| Prose composition | [Pearson, *Greek Prose Composition*](https://archive.org/details/greekprosecompos00pearrich) |
+| Advanced Syntax Reference | Herbert Weir Smyth, *Greek Grammar* (Harvard University Press) |
+| Greek Prose Composition | - [Pearson, *Greek Prose Composition*](https://archive.org/details/greekprosecompos00pearrich)<br/>- Eleanor Dickey, *An Introduction to the Composition and Analysis of Greek Prose* (Cambridge University Press) |
+
+## Classical Philosophy: Plato
+
+| Subject / Author | Resource |
+| --- | --- |
+| Socratic Dialogues | - [Plato Collection (Perseus)](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:author-Plato)<br/>- [Geoffrey Steadman, *Plato's Apology & Crito: Text with Facing Vocabulary*](https://geoffreysteadman.com/) |
+| Middle Dialogues | - [Geoffrey Steadman, *Plato's Meno, Republic I, and Symposium*](https://geoffreysteadman.com/)<br/>- Cambridge Greek and Latin Classics (Green and Yellow series): Plato's *Symposium* / *Phaedo* |
+| Philosophical Context | [Open Yale Courses – Introduction to Political Philosophy (PLSC 114)](https://oyc.yale.edu/political-science/plsc-114) |
+
+## Classical Greek Poetry: Epic & Attic Drama
+
+| Genre / Dialect | Resources |
+| --- | --- |
+| Homeric Epic (Epic Dialect & Dactylic Hexameter) | - Clyde Pharr, *Homer's Iliad: Books I-VI* (University of Oklahoma Press)<br/>- [Geoffrey Steadman, *Homer's Iliad 6 & 22; Odyssey 6-8, 9-12*](https://geoffreysteadman.com/)<br/>- [Homer Collection (Perseus)](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman) |
+| Attic Tragedy (Dramatic Dialogue & Iambic Trimeter) | - Euripides, *Medea* / Sophocles, *Antigone* (Cambridge Greek and Latin Classics)<br/>- [Geoffrey Steadman, *Euripides' Medea* & *Sophocles' Oedipus Tyrannus*](https://geoffreysteadman.com/)<br/>- [Greek Drama Collection (Perseus)](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman) |
 
 ## Historical & Cultural Context
 
 | Subject | Resource |
 | --- | --- |
-| Greek history | [Open Yale – Ancient Greek History](https://oyc.yale.edu/classics/clcv-205) |
-| Literary culture | [Perseus Essays & Introductions](https://www.perseus.tufts.edu/hopper/) (browse collections for author intros & essays) |
-
-## Philosophy
-
-| Author | Resource |
-| --- | --- |
-| Plato | [Apology, Crito, Republic (Perseus)](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:author-Plato) |
-| Aristotle | [Nicomachean Ethics (Perseus)](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0052) |
-| Presocratics | [Perseus Presocratic fragments](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Presocratics) |
-| Context | [Open Yale – Political Philosophy](https://oyc.yale.edu/political-science/plsc-114) (relevant lectures) |
+| Greek History | - [Open Yale Courses – CLCV 205: Introduction to Ancient Greek History (Donald Kagan)](https://oyc.yale.edu/classics/clcv-205)<br/>- Thomas R. Martin, *Ancient Greece: From Prehistoric to Hellenistic Times* (Yale University Press) |
+| Greek Literature & Culture | - P. E. Easterling and B. M. W. Knox (eds.), *The Cambridge History of Classical Literature: Volume 1, Early Greek Literature* (Cambridge University Press)<br/>- [Perseus Collection Essays & Historical Overviews](https://www.perseus.tufts.edu/hopper/) |
 
 ## Congratulations
 
@@ -127,6 +138,3 @@ Congratulations!
 # Code of conduct
 
 [Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
-
-
-
