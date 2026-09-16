@@ -1,180 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/ancient-greek/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/ancient-greek/">
+  <link rel="canonical" href="https://hocbigg.github.io/ancient-greek/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/ancient-greek/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/ancient-greek/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/ancient-greek/">Ancient-Greek</a>
-<a href="/ancient-greek/advanced_topics.html">Advanced Topics</a>
-<a href="/ancient-greek/extras/courses.html">Extra Courses</a>
-<a href="/ancient-greek/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/ancient-greek/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/ancient-greek/">Ancient Greek</a></li>
+      <li><a href="/ancient-greek/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/ancient-greek/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/ancient-greek/extras/courses.html">Extra Courses</a></li>
+      <li><a href="/ancient-greek/resources.html">Resources</a></li>
+      <li><a href="https://github.com/hocbigg/ancient-greek" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="advanced-topics">Advanced Topics</h1>
-<p>Once you have finished the Core sections, you can choose one or more of the remaining sections depending on your interests. These are deeper dives and are not required for a general understanding, but they allow you to explore particular directions in the field.</p>
-<p>The specialization tracks are:</p>
+<p>Having completed the foundational and intermediate undergraduate curriculum in classical Attic and Homeric Greek, you can pursue specialized study across several advanced philological, historical, and linguistic subfields. Rather than attempting to complete every track, you should select one or two specialization tracks that align directly with your research interests and reading goals.</p>
+<h3 id="specialization-tracks">Specialization Tracks</h3>
 <ul>
-<li>
-<p>IV. Homeric Greek<br />
-  Focus: epic poetry (Iliad and Odyssey), older dialect, and poetic meter.</p>
-</li>
-<li>
-<p>V. Greek Drama<br />
-  Focus: tragedy and comedy, theatrical performance, and the chorus.</p>
-</li>
-<li>
-<p>VI. Lyric &amp; Hellenistic Poetry<br />
-  Focus: shorter lyric poems (Sappho, Pindar) and later Hellenistic poetry.</p>
-</li>
-<li>
-<p>VIII. Historiography<br />
-  Focus: historical writing (Herodotus and Thucydides).</p>
-</li>
-<li>
-<p>IX. Koine &amp; Post-Classical Greek<br />
-  Focus: the simplified Greek of the Hellenistic and Roman periods, including the New Testament and other later prose.</p>
-</li>
+<li><a href="#archaic-lyric-and-hellenistic-poetics">Archaic Lyric and Hellenistic Poetics</a>: Covers non-epic archaic lyric song, complex strophic meters, and the learned, allusive poetry of the Alexandrian period.</li>
+<li><a href="#historical-linguistics-dialectology-and-textual-criticism">Historical Linguistics, Dialectology, and Textual Criticism</a>: Traces the diachronic evolution of the language from Proto-Indo-European through Mycenaean Linear B, regional epichoric dialects, and the principles of manuscript stemmatics.</li>
+<li><a href="#material-philology-epigraphy-papyrology-and-palaeography">Material Philology: Epigraphy, Papyrology, and Palaeography</a>: Develops practical skills in transcribing, editing, and dating stone inscriptions, papyrus documents, and Byzantine medieval manuscripts.</li>
+<li><a href="#classical-historiography-rhetoric-and-political-thought">Classical Historiography, Rhetoric, and Political Thought</a>: Examines historical narrative architecture, judicial and deliberative oratorical style, classical rhetorical theory, and the post-classical philosophical tradition.</li>
+<li><a href="#post-classical-koine-and-byzantine-greek">Post-Classical, Koine, and Byzantine Greek</a>: Analyzes the structural evolution of the language from Hellenistic Koine and the Imperial Second Sophistic through high-register and vernacular Byzantine Greek.</li>
 </ul>
-<h2 id="homeric-greek">Homeric Greek</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Homeric grammar</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/homericgreekabo01phargoog">Pharr, <em>Homeric Greek</em></a> (Archive.org scan)</td>
-</tr>
-<tr>
-<td>Iliad &amp; Odyssey</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://isaw.nyu.edu/publications/awol-index/html/digital.library.northwestern.edu/homer.html">Chicago Homer + Perseus</a> (Chicago Homer primary; cross-reference Perseus)</td>
-</tr>
-<tr>
-<td>Meter</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/west-1987-introduction-to-greek-metre">West, <em>Greek Metre</em></a> (Archive – abridged intro edition)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="greek-drama">Greek Drama</h2>
-<table>
-<thead>
-<tr>
-<th>Genre</th>
-<th>Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Tragedy</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:author-Sophocles">Sophocles &amp; Euripides (Perseus + commentaries)</a> (Perseus primary; commentaries via DCC where available)</td>
-</tr>
-<tr>
-<td>Comedy</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:author-Aristophanes">Aristophanes (Perseus)</a></td>
-</tr>
-<tr>
-<td>Performance &amp; chorus</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/classics/clcv-205">Open Yale – Greek Drama lectures</a> (integrated in Ancient Greek History series)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="lyric-hellenistic-poetry">Lyric &amp; Hellenistic Poetry</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Lyric (Sappho, Pindar)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:author-Sappho">Perseus Lyric Corpus</a> (Sappho &amp; Pindar via Perseus authors)</td>
-</tr>
-<tr>
-<td>Hellenistic</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0228">Theocritus (Perseus)</a></td>
-</tr>
-<tr>
-<td>Meter &amp; form</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/west-1987-introduction-to-greek-metre">West, <em>Greek Metre</em></a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="historiography">Historiography</h2>
-<table>
-<thead>
-<tr>
-<th>Author</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Herodotus</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126">Perseus Histories</a></td>
-</tr>
-<tr>
-<td>Thucydides</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0200">Perseus Peloponnesian War</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="koine-post-classical-greek">Koine &amp; Post-Classical Greek</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Koine grammar</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://byzantinetext.com/">Robinson &amp; Pierpont Morphological NT</a> (Byzantine text with morphology)</td>
-</tr>
-<tr>
-<td>NT Greek</td>
-<td></td>
-</tr>
-<tr>
-<td>Video instruction</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.biblicaltraining.org/learn/institute/nt201-biblical-greek">BiblicalTraining.org</a> (Bill Mounce Biblical Greek series)</td>
-</tr>
-<tr>
-<td>Hellenistic prose</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0234">Polybius (Perseus)</a></td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<h2 id="archaic-lyric-and-hellenistic-poetics">Archaic Lyric and Hellenistic Poetics</h2>
+<p>Investigates non-epic archaic song, complex strophic meters, and the learned, allusive poetry of the Alexandrian period.</p>
+<p>Archaic Melic &amp; Elegiac Poetry: <a href="https://books.google.com/books?isbn=9780862920081" target="_blank" rel="noopener noreferrer">Greek Lyric Poetry: A Selection of Early Greek Lyric, Elegiac and Iambic Poetry by David A. Campbell (Bristol Classical Press)</a> - Provides the standard annotated Greek texts of Archilochus, Sappho, Alcaeus, and Simonides, with extensive linguistic notes on non-Attic poetic dialects and archaic symposiastic context.</p>
+<p>Hellenistic Alexandrian Poetics: <a href="https://books.google.com/books?isbn=9780631233220" target="_blank" rel="noopener noreferrer">A Guide to Hellenistic Literature by Kathryn Gutzwiller (Wiley-Blackwell)</a> - An authoritative critical survey detailing the aesthetics, cultural context, and generic experimentation of Callimachus, Theocritus, and Apollonius of Rhodes.</p>
+<p>Hellenistic Epic &amp; Pastoral Reading: <a href="https://books.google.com/books?isbn=9780521313803" target="_blank" rel="noopener noreferrer">Apollonius of Rhodes: Argonautica Book III, edited by Richard Hunter (Cambridge University Press)</a> - Provides a student-oriented commentary on unadapted Hellenistic hexameter, focusing on psychological characterization, Homeric imitation, and Alexandrian narrative technique.</p>
+<p>Greek Metrics &amp; Colometry: <a href="https://books.google.com/books?isbn=9780198721291" target="_blank" rel="noopener noreferrer">Introduction to Greek Metre by M. L. West (Oxford University Press)</a> - A systematic handbook designed to teach students how to scan, analyze, and interpret complex lyric meters, including aeolic, dactylo-epitrite, and dochmiac strophes.</p>
+<h2 id="historical-linguistics-dialectology-and-textual-criticism">Historical Linguistics, Dialectology, and Textual Criticism</h2>
+<p>Traces the diachronic evolution of Greek from Proto-Indo-European through Mycenaean Linear B, regional epichoric dialects, and manuscript stemmatics.</p>
+<p>Comparative Indo-European Grammar: <a href="https://www.coursera.org/learn/comparative-indo-european-linguistics" target="_blank" rel="noopener noreferrer">Introduction to Comparative Indo-European Linguistics (Leiden University / Coursera)</a> - A free audit MOOC exploring comparative linguistic reconstruction, ablaut systems, sound laws, and the historical relationship between Greek and other early Indo-European languages.</p>
+<p>Historical Greek &amp; Latin Grammar: <a href="https://books.google.com/books?isbn=9780195083453" target="_blank" rel="noopener noreferrer">New Comparative Grammar of Greek and Latin by Andrew L. Sihler (Oxford University Press)</a> - The standard historical reference grammar detailing phonological sound shifts, laryngeal reflexes, and morphological changes from Proto-Indo-European into Greek.</p>
+<p>Epichoric Dialects &amp; Mycenaean Greek: <a href="https://books.google.com/books?isbn=9781666731835" target="_blank" rel="noopener noreferrer">The Greek Dialects by Carl Darling Buck (Wipf and Stock)</a> - A comprehensive reference manual and commented collection of regional inscriptions covering West Greek, Doric, Aeolic, Ionic, and Arcado-Cypriot dialect features.</p>
+<p>Textual Criticism &amp; Stemmatics: <a href="https://books.google.com/books?isbn=9783598774010" target="_blank" rel="noopener noreferrer">Textual Criticism and Editorial Technique by Martin L. West (Walter de Gruyter)</a> - The classic practical guide to analyzing manuscript variation, constructing stemmata codicum, identifying scribal errors, and applying conjectural emendation.</p>
+<h2 id="material-philology-epigraphy-papyrology-and-palaeography">Material Philology: Epigraphy, Papyrology, and Palaeography</h2>
+<p>Develops practical skills in transcribing, editing, and dating stone inscriptions, papyrus documents, and Byzantine medieval manuscripts.</p>
+<p>Greek Epigraphy &amp; Digital Editions: <a href="https://sunoikisisdc.github.io/" target="_blank" rel="noopener noreferrer">Sunoikisis Digital Classics (University of Leipzig &amp; Institute of Classical Studies)</a> - An open-access master's-level courseware series providing video tutorials and practical exercises in epigraphic analysis, papyrological transcription, and EpiDoc XML encoding.</p>
+<p>Epigraphic Methodology: <a href="https://books.google.com/books?isbn=9780521298605" target="_blank" rel="noopener noreferrer">The Study of Greek Inscriptions by A. G. Woodhead (Cambridge University Press)</a> - The foundational methodological introduction to the physical layout, letter forms, dating criteria, restoration techniques, and historical use of Greek stone inscriptions.</p>
+<p>Documentary &amp; Literary Papyrology: <a href="https://books.google.com/books?isbn=9780199843695" target="_blank" rel="noopener noreferrer">The Oxford Handbook of Papyrology, edited by Roger S. Bagnall (Oxford University Press)</a> - A comprehensive guide to the discovery, physical preservation, decipherment, and historical evaluation of Greek papyrus documents and literary fragments from Egypt.</p>
+<p>Greek Palaeography: <a href="https://spotlight.vatlib.it/greek-paleography" target="_blank" rel="noopener noreferrer">Greek Paleography: From Antiquity to the Renaissance (Biblioteca Apostolica Vaticana)</a> - A free, structured online course illustrated with high-resolution Vatican manuscript plates covering majuscule scripts, the minuscule bookhand revolution, Perlschrift, ligatures, and Byzantine scribal hands.</p>
+<p>Manuscript Transmission: <a href="https://books.google.com/books?isbn=9780199686339" target="_blank" rel="noopener noreferrer">Scribes and Scholars: A Guide to the Transmission of Greek and Latin Literature by L. D. Reynolds and N. G. Wilson (Oxford University Press)</a> - The definitive survey of how ancient texts survived antiquity through Byzantine scholarship, monastic scriptoria, and Renaissance editorial recoveries.</p>
+<h2 id="classical-historiography-rhetoric-and-political-thought">Classical Historiography, Rhetoric, and Political Thought</h2>
+<p>Examines historical narrative architecture, judicial and deliberative oratorical style, classical rhetorical theory, and the post-classical philosophical tradition.</p>
+<p>Advanced Historiography &amp; Narrative Method: <a href="https://books.google.com/books?isbn=9780199225019" target="_blank" rel="noopener noreferrer">Greek Historians by John Marincola (Oxford University Press)</a> - A concise, advanced analysis of the differing narrative conventions, authorial personas, speech-making practices, and historical methods of Herodotus, Thucydides, and Polybius.</p>
+<p>Forensic &amp; Deliberative Oratory: <a href="https://books.google.com/books?isbn=9780521629300" target="_blank" rel="noopener noreferrer">Demosthenes: On the Crown, edited by Harvey Yunis (Cambridge University Press)</a> - An advanced Green-and-Yellow commentary on the pinnacle of classical Attic rhetorical prose, offering in-depth analysis of fourth-century legal procedure, political invective, and complex periodic syntax.</p>
+<p>Classical Rhetorical Theory: <a href="https://books.google.com/books?isbn=9780195325089" target="_blank" rel="noopener noreferrer">Aristotle: On Rhetoric: A Theory of Civic Discourse, translated with commentary by George A. Kennedy (Oxford University Press)</a> - The primary ancient treatise on persuasive discourse, accompanied by an extensive modern commentary elucidating rhetorical genres, artistic proofs, and stylistic figures.</p>
+<p>Ancient Philosophical Traditions: <a href="https://historyofphilosophy.net/" target="_blank" rel="noopener noreferrer">The History of Philosophy Without Any Gaps: Classical &amp; Hellenistic Philosophy by Peter Adamson (LMU Munich / King's College London)</a> - A comprehensive, free open audio lecture series covering the continuous evolution of ancient philosophical argument from the Presocratics through the Hellenistic schools to late antique Neoplatonism.</p>
+<h2 id="post-classical-koine-and-byzantine-greek">Post-Classical, Koine, and Byzantine Greek</h2>
+<p>Analyzes the structural evolution of the language from Hellenistic Koine and the Imperial Second Sophistic through high-register and vernacular Byzantine Greek.</p>
+<p>Hellenistic Koine &amp; New Testament Greek: <a href="https://books.google.com/books?isbn=9780226058221" target="_blank" rel="noopener noreferrer">A Greek Grammar of the New Testament and Other Early Christian Literature by F. Blass, A. Debrunner, and Robert W. Funk (University of Chicago Press)</a> - The authoritative reference grammar detailing phonological simplifications, case syncopation, verbal aspect changes, and Semitic lexical influences across Hellenistic Greek.</p>
+<p>Second Sophistic &amp; Imperial Prose: <a href="https://books.google.com/books?isbn=9780198568810" target="_blank" rel="noopener noreferrer">The Second Sophistic by Tim Whitmarsh (Oxford University Press)</a> - An essential survey of the Imperial-era cultural and linguistic movement that self-consciously revived classical Attic Greek in the rhetoric, biography, and fiction of the Roman Empire.</p>
+<p>Diachronic History of the Greek Language: <a href="https://books.google.com/books?isbn=9781405134156" target="_blank" rel="noopener noreferrer">Greek: A History of the Language and Its Speakers by Geoffrey Horrocks (Wiley-Blackwell)</a> - A comprehensive linguistic history tracking the phonetic, morphological, and syntactic evolution of Greek from Bronze Age Linear B through the Koine and Byzantine periods to the modern language.</p>
+<p>Medieval &amp; Byzantine Greek: <a href="https://books.google.com/books?isbn=9780521299787" target="_blank" rel="noopener noreferrer">Medieval and Modern Greek by Robert Browning (Cambridge University Press)</a> - A classic monograph tracing the emergence of medieval Greek diglossia, phonological leveling, the loss of the infinitive, and the development of early vernacular Byzantine literature.</p>
+    </article>
+  </main>
 
 </body>
 </html>

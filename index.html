@@ -1,249 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Ancient Greek</title>
-<link rel="stylesheet" href="/ancient-greek/style.css">
-<meta name="description" content="Path to a free self-taught education in Ancient Greek!">
+  <title>Hocbigg - Ancient Greek</title>
+  <meta name="description" content="Path to a free self-taught education in Ancient Greek!">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/ancient-greek/">
+  <link rel="canonical" href="https://hocbigg.github.io/ancient-greek/">
+  <meta property="og:title" content="Hocbigg - Ancient Greek">
+  <meta property="og:description" content="Path to a free self-taught education in Ancient Greek!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/ancient-greek/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Ancient Greek">
-<meta property="og:description" content="Path to a free self-taught education in Ancient Greek!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/ancient-greek/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/ancient-greek/">Ancient-Greek</a>
-<a href="/ancient-greek/advanced_topics.html">Advanced Topics</a>
-<a href="/ancient-greek/extras/courses.html">Extra Courses</a>
-<a href="/ancient-greek/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/ancient-greek/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/ancient-greek/">Ancient Greek</a></li>
+      <li><a href="/ancient-greek/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/ancient-greek/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/ancient-greek/extras/courses.html">Extra Courses</a></li>
+      <li><a href="/ancient-greek/resources.html">Resources</a></li>
+      <li><a href="https://github.com/hocbigg/ancient-greek" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Ancient Greek</h1>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-09-16">2026-09-16</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Studying Ancient Greek provides direct, unmediated access to the foundational texts of Western literature, philosophy, drama, and historiography. Rather than relying on modern translations that inevitably smooth over ideological tensions, rhetorical nuances, and poetic meters, learning the language allows you to encounter authors like Homer, Plato, and Euripides on their own terms. </p>
+<p>This curriculum is designed for absolute beginners and assumes no prior background in classical philology, Latin, or linguistics. It establishes a complete foundational baseline, taking you from the Greek alphabet and basic noun-verb morphology to reading unadapted classical prose and verse. Its scope is deliberately focused on the two primary literary dialects of the classical period: Attic Greek, the literary standard of fifth- and fourth-century BCE Athens, and Homeric Greek, the archaic artificial dialect of epic poetry. Post-classical developments (such as Hellenistic Koine, the Second Sophistic, and Byzantine Greek) and auxiliary material disciplines are reserved for subsequent study.</p>
+<p>Because classical language acquisition is strictly cumulative, you should work through the subjects in a clear linear progression:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Grammatical Foundation:</strong> Begin with <em>Foundations of Attic Greek</em>. Mastering nominal declensions, the principal parts of the verb system, and foundational syntax is mandatory before attempting continuous ancient texts.</li>
+<li><strong>Prose Fluency and Active Syntax:</strong> Transition directly into <em>Intermediate Attic Prose</em> and <em>Greek Syntax and Prose Composition</em>. Reading unadapted historical narrative and courtroom oratory (Xenophon, Lysias) builds reading stamina, while active prose composition reinforces complex clause structures (such as conditional sentences and indirect discourse) from the inside out.</li>
+<li><strong>Philosophical Prose:</strong> Advance to <em>Classical Philosophy: Plato</em> to develop confidence with philosophical dialogue, conversational idiom, and sustained dialectical argument.</li>
+<li><strong>Poetic Dialects and Meters:</strong> Tackle verse only after establishing solid prose fluency. <em>Homeric Epic Poetry</em> introduces archaic epic morphology and dactylic hexameter, while <em>Attic Drama and Tragedy</em> transitions into fifth-century tragic diction, iambic trimeter, and choral lyric.</li>
+<li><strong>Historical Framework:</strong> <em>Greek Historical and Cultural Context</em> should be studied alongside your intermediate coursework or immediately following it, providing the civic and historical grounding required to interpret these texts in their original environments.</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>The Ancient Greek curriculum is a complete education in Ancient Greek using online materials (focusing on Attic Greek of the Classical period, with extensions to Homeric and Koine).</p>
-<p>The program emphasizes progressive language acquisition, literary reading, historical/cultural context, and analytical skills. Logical sequencing builds from fundamentals to advanced textual engagement.</p>
+<p>Once you have completed this core sequence and achieved reading fluency in Attic and epic texts, you can branch out into specialized subfields in <a href="advanced_topics.html">Advanced Topics</a>, including historical linguistics, epigraphy, papyrology, and post-classical Greek. To explore landmark secondary scholarship on Greek religion, oral-formulaic theory, and textual criticism, consult <a href="extras/readings.html">Readings</a>; for complementary university lecture series and open audio deep-dives, see <a href="extras/courses.html">Courses</a>.</p>
 <p>The resource page can be found here: <a href="resources.html">ancient-greek/resources</a>.</p>
-<h2 id="organization">Organization</h2>
-<p>This repository is organized into 2 main components:</p>
+<h3 id="communities">Communities</h3>
 <ul>
-<li><strong>Core Curriculum</strong> (this page): the foundational knowledge of the field;</li>
-<li><strong><a href="advanced_topics.html">Advanced Topics</a></strong>: focused study in specific areas;</li>
+<li>Forums: <a href="https://www.textkit.com/greek-latin-forum/" target="_blank" rel="noopener noreferrer">Textkit Greek and Latin Forums</a></li>
+<li>Subreddits: <a href="https://www.reddit.com/r/AncientGreek/" target="_blank" rel="noopener noreferrer">r/AncientGreek</a></li>
+<li>Discord servers: <a href="https://discord.gg/latin" target="_blank" rel="noopener noreferrer">Latin &amp; Ancient Greek</a></li>
+<li>You can also interact through <a href="https://github.com/hocbigg/ancient-greek/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<p><strong>Process:</strong> Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.</p>
-<ul>
-<li>For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.</li>
-<li>The Core Curriculum provides a shared foundation and is intended to be completed in full.</li>
-<li>Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.</li>
-</ul>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<p><strong><a href="/CONTRIBUTING.html">How to contribute</a></strong></p>
-<h1 id="communities">Communities</h1>
-<ul>
-<li>Forums: <a target="_blank" rel="noopener noreferrer" href="https://www.textkit.com/greek-latin-forum/">Textkit Greek and Latin Forums</a></li>
-<li>Subreddits: <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/AncientGreek/">r/AncientGreek</a></li>
-<li>Discord servers: <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/latin">Latin &amp; Ancient Greek</a></li>
-<li>You can also interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/ancient-greek/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
-<li>
-<p>Join our Discord server (for discussions around this and other curricula): </p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></p>
-</li>
-</ul>
-<h1 id="curriculum">Curriculum</h1>
-<ul>
-<li><a href="#foundations-of-ancient-greek-attic">Foundations of Ancient Greek Attic</a><ul>
-<li><a href="#a-core-grammar">Core Grammar</a></li>
-<li><a href="#b-reading-support">Reading Support</a></li>
-</ul>
-</li>
-<li><a href="#attic-prose-mastery">Attic Prose Mastery</a><ul>
-<li><a href="#a-core-prose">Core Prose</a></li>
-<li><a href="#b-advanced-syntax">Advanced Syntax</a></li>
-</ul>
-</li>
-<li><a href="#historical--cultural-context">Historical &amp; Cultural Context</a></li>
-<li>
-<p><a href="#philosophy">Philosophy</a></p>
-</li>
-<li>
-<p>Foundations of Ancient Greek (Attic)<br />
-   Start here. This section teaches you how to read and understand basic to intermediate Attic Greek (the standard dialect of classical Athens). Without these grammar and reading skills, the rest of the roadmap will be very difficult.</p>
-</li>
-<li>
-<p>Attic Prose Mastery<br />
-   Immediately after Foundations. This section builds your ability to read real, unadapted classical Greek prose confidently and introduces more advanced sentence structures.</p>
-</li>
-<li>
-<p>Historical &amp; Cultural Context<br />
-   Study this while or right after working through Attic Prose. It gives you the historical and literary background that makes the texts you are reading meaningful.</p>
-</li>
-<li>
-<p>Philosophy<br />
-   Tackle this next. Plato and Aristotle wrote in clear, influential Attic prose. By this point you will have the language skills to read them in the original with growing confidence, and their works are central to understanding classical Greek thought.</p>
-</li>
-</ul>
-<h2 id="foundations-of-ancient-greek-attic">Foundations of Ancient Greek (Attic)</h2>
-<h3 id="core-grammar">Core Grammar</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Attic Greek Grammar (Beginner &amp; Intermediate)</td>
-<td>- <a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/greekintensiveco0000hans">Hansen &amp; Quinn, <em>Greek: An Intensive Course</em></a><br/>- <a target="_blank" rel="noopener noreferrer" href="https://www.openculture.com/2016/12/introduction-to-ancient-greek-history-a-free-online-course-from-yale.html">Harvard / Brandeis Ancient Greek</a></td>
-</tr>
-<tr>
-<td>Reference grammar</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0007">Smyth, <em>Greek Grammar</em></a> (Perseus)</td>
-</tr>
-<tr>
-<td>Morphology &amp; dictionary</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://logeion.uchicago.edu/">Logeion (Chicago)</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="reading-support">Reading Support</h3>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Beginner-friendly annotated texts</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://dcc.dickinson.edu/">Dickinson College Commentaries (DCC)</a></td>
-</tr>
-<tr>
-<td>Texts, lexicon, morphology</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/">Perseus Digital Library</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="attic-prose-mastery">Attic Prose Mastery</h2>
-<h3 id="core-prose">Core Prose</h3>
-<table>
-<thead>
-<tr>
-<th>Author</th>
-<th>Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Xenophon</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0202">Anabasis (Perseus + DCC)</a></td>
-</tr>
-<tr>
-<td>Lysias</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:author-Lysias">Selected speeches (Perseus)</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="advanced-syntax">Advanced Syntax</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Greek syntax</td>
-<td>Smyth + Hansen &amp; Quinn</td>
-</tr>
-<tr>
-<td>Prose composition</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/greekprosecompos00pearrich">Pearson, <em>Greek Prose Composition</em></a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="historical-cultural-context">Historical &amp; Cultural Context</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Greek history</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/classics/clcv-205">Open Yale – Ancient Greek History</a></td>
-</tr>
-<tr>
-<td>Literary culture</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/">Perseus Essays &amp; Introductions</a> (browse collections for author intros &amp; essays)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="philosophy">Philosophy</h2>
-<table>
-<thead>
-<tr>
-<th>Author</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Plato</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:author-Plato">Apology, Crito, Republic (Perseus)</a></td>
-</tr>
-<tr>
-<td>Aristotle</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0052">Nicomachean Ethics (Perseus)</a></td>
-</tr>
-<tr>
-<td>Presocratics</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Presocratics">Perseus Presocratic fragments</a></td>
-</tr>
-<tr>
-<td>Context</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/political-science/plsc-114">Open Yale – Political Philosophy</a> (relevant lectures)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="congratulations">Congratulations</h2>
-<p>After completing the requirements of the curriculum above,
-you will have completed the equivalent of a full bachelor's degree in Ancient Greek.
-Congratulations!</p>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="foundations-of-attic-greek">Foundations of Attic Greek</h3>
+<p>Covers the nominal declensions, verbal conjugations, core vocabulary, and foundational syntax of classical Attic Greek.</p>
+<p><a href="https://books.google.com/books?isbn=9780520275713" target="_blank" rel="noopener noreferrer">Introduction to Attic Greek by Donald J. Mastronarde (University of California Press)</a> - The primary foundational textbook, offering systematic explanations of Attic morphology, accentuation, and basic sentence structure.</p>
+<p><a href="https://atticgreek.org/" target="_blank" rel="noopener noreferrer">Ancient Greek Tutorials (Donald J. Mastronarde / UC Berkeley)</a> - An open-access interactive companion designed to reinforce Mastronarde's textbook through audio pronunciation guides, accent tutorials, and morphological drills.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLq5ea-jR9u2puDaLoRL-nBkpwrkURbLjT" target="_blank" rel="noopener noreferrer">Learn Ancient Greek (Harvard Center for Hellenic Studies / Prof. Leonard Muellner)</a> - A complete 114-lecture open video course delivering two semesters of university grammar instruction, closely coordinated with Hansen and Quinn.</p>
+<p><a href="https://books.google.com/books?isbn=9780823216635" target="_blank" rel="noopener noreferrer">Greek: An Intensive Course by Hardy Hansen and Gerald M. Quinn (Fordham University Press)</a> - A fast-paced, drill-intensive alternative to Mastronarde that pairs directly with Professor Muellner’s video lectures.</p>
+<h3 id="intermediate-attic-prose">Intermediate Attic Prose</h3>
+<p>Covers continuous, unadapted classical Attic narrative and forensic oratory to transition students from isolated textbook sentences to genuine ancient literature.</p>
+<p><a href="https://geoffreysteadman.com/xenophon-anabasis-i/" target="_blank" rel="noopener noreferrer">Xenophon's Anabasis I: Text with Facing Vocabulary and Commentary by Geoffrey Steadman</a> - An open-access guided reader featuring running vocabulary and syntax notes on facing pages, serving as the standard initial bridge to continuous prose.</p>
+<p><a href="https://geoffreysteadman.com/lysias-i/" target="_blank" rel="noopener noreferrer">Lysias I: On the Murder of Eratosthenes: Text with Facing Vocabulary and Commentary by Geoffrey Steadman</a> - A sequential reader to study after Xenophon, introducing standard Attic courtroom rhetoric and idiomatic conversational syntax.</p>
+<h3 id="greek-syntax-and-prose-composition">Greek Syntax and Prose Composition</h3>
+<p>Covers advanced Attic sentence structure, mood usage (subjunctive and optative), and active composition from English into Greek to solidify grammatical mastery.</p>
+<p><a href="https://books.google.com/books?isbn=9780521184250" target="_blank" rel="noopener noreferrer">An Introduction to the Composition and Analysis of Greek Prose by Eleanor Dickey (Cambridge University Press)</a> - Canonical modern textbook for mastering complex Attic syntax through linguistic explanations, clause analysis, and active composition exercises.</p>
+<p><a href="https://archive.org/details/greekprosecompos00pearrich" target="_blank" rel="noopener noreferrer">Greek Prose Composition by Henry Carr Pearson (American Book Company / Internet Archive)</a> - A public-domain alternative and supplementary drill book focused on sentence-level translation exercises keyed to Xenophon's vocabulary.</p>
+<h3 id="classical-philosophy-plato">Classical Philosophy: Plato</h3>
+<p>Covers Socratic dialogue, dialectical argumentation, and the literary style of middle-period Platonic prose.</p>
+<p><a href="https://geoffreysteadman.com/platos-apology/" target="_blank" rel="noopener noreferrer">Plato's Apology: Text with Facing Vocabulary and Commentary by Geoffrey Steadman</a> - The primary entry text for Platonic Greek, supported by facing vocabulary and grammatical notes to ease the transition into philosophical dialogue.</p>
+<p><a href="https://geoffreysteadman.com/platos-crito/" target="_blank" rel="noopener noreferrer">Plato's Crito: Text with Facing Vocabulary and Commentary by Geoffrey Steadman</a> - A direct sequel to the Apology that reinforces Platonic ethical argumentation and conversational syntax at the intermediate level.</p>
+<p><a href="https://books.google.com/books?isbn=9780521295239" target="_blank" rel="noopener noreferrer">Plato: Symposium, edited by Kenneth Dover (Cambridge University Press)</a> - A scholarly commentary to tackle after Steadman's readers, providing advanced philological and literary analysis of unadapted Platonic prose.</p>
+<p><a href="https://oyc.yale.edu/political-science/plsc-114" target="_blank" rel="noopener noreferrer">PLSC 114: Introduction to Political Philosophy (Open Yale Courses)</a> - A free lecture series whose opening lectures provide contextual background on the historical trial of Socrates and Plato's political philosophy.</p>
+<h3 id="homeric-epic-poetry">Homeric Epic Poetry</h3>
+<p>Covers the Homeric dialect, archaic epic morphology, and dactylic hexameter meter through Homer's Iliad and Odyssey.</p>
+<p><a href="https://books.google.com/books?isbn=9780806141640" target="_blank" rel="noopener noreferrer">Homeric Greek: A Book for Beginners by Clyde Pharr, revised by John Wright and Paula Debnar (University of Oklahoma Press)</a> - The foundational transitional textbook that systematically introduces the grammar, dialectical forms, and meter of epic poetry using Iliad Book 1.</p>
+<p><a href="https://geoffreysteadman.com/iliad-6-22/" target="_blank" rel="noopener noreferrer">Homer's Iliad 6 &amp; 22: Text with Facing Vocabulary and Commentary by Geoffrey Steadman</a> - Open-access guided reader designed to follow Pharr's textbook, providing running vocabulary and metrical aids for two major books of the Iliad.</p>
+<p><a href="https://geoffreysteadman.com/homers-odyssey-6-8/" target="_blank" rel="noopener noreferrer">Homer's Odyssey 6–8: Text with Facing Vocabulary and Commentary by Geoffrey Steadman</a> - A complementary guided reader to be studied alongside or after the Iliad selections, focusing on epic narrative style in the Odyssey.</p>
+<h3 id="attic-drama-and-tragedy">Attic Drama and Tragedy</h3>
+<p>Covers the poetic syntax, tragic vocabulary, and dramatic meters (iambic trimeter and choral lyric) of classical Athenian tragedy.</p>
+<p><a href="https://geoffreysteadman.com/euripides-medea/" target="_blank" rel="noopener noreferrer">Euripides' Medea: Text with Facing Vocabulary and Commentary by Geoffrey Steadman</a> - An open-access guided reader providing facing vocabulary and parsing aids, serving as the gentlest initial entry into reading dramatic verse.</p>
+<p><a href="https://books.google.com/books?isbn=9780521643863" target="_blank" rel="noopener noreferrer">Euripides: Medea, edited by Donald J. Mastronarde (Cambridge University Press)</a> - An advanced commentary to use alongside or after Steadman, notable for its dedicated introductory treatise on tragic language, style, and meters.</p>
+<h3 id="greek-historical-and-cultural-context">Greek Historical and Cultural Context</h3>
+<p>Covers the historical, political, and literary development of archaic and classical Greece to provide the interpretive framework necessary for reading ancient literature.</p>
+<p><a href="https://oyc.yale.edu/classics/clcv-205" target="_blank" rel="noopener noreferrer">CLCV 205: Introduction to Ancient Greek History by Donald Kagan (Open Yale Courses)</a> - A comprehensive 24-lecture university course detailing the development of the Greek polis, the Persian and Peloponnesian Wars, and Athenian democracy.</p>
+<p><a href="https://books.google.com/books?isbn=9780300160055" target="_blank" rel="noopener noreferrer">Ancient Greece: From Prehistoric to Hellenistic Times by Thomas R. Martin (Yale University Press)</a> - A concise, accessible narrative history that serves as the primary companion reading for Donald Kagan’s lecture series.</p>
+<p><a href="https://books.google.com/books?isbn=9780521210423" target="_blank" rel="noopener noreferrer">The Cambridge History of Classical Literature: Volume 1, Greek Literature, edited by P. E. Easterling and B. M. W. Knox (Cambridge University Press)</a> - The standard historical reference survey covering the cultural context, genres, and authors of Greek literature from Homer to the classical period.</p>
+    </article>
+  </main>
 
 </body>
 </html>

@@ -1,107 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Extra Reading</title>
-<link rel="stylesheet" href="/ancient-greek/style.css">
-<meta name="description" content="">
+  <title>Great Readings in Ancient Greek</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/ancient-greek/">
+  <link rel="canonical" href="https://hocbigg.github.io/ancient-greek/extras/readings.html">
+  <meta property="og:title" content="Great Readings in Ancient Greek">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/ancient-greek/extras/readings.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Extra Reading">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/ancient-greek/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/ancient-greek/">Ancient-Greek</a>
-<a href="/ancient-greek/advanced_topics.html">Advanced Topics</a>
-<a href="/ancient-greek/extras/courses.html">Extra Courses</a>
-<a href="/ancient-greek/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/ancient-greek/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/ancient-greek/">Ancient Greek</a></li>
+      <li><a href="/ancient-greek/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/ancient-greek/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/ancient-greek/extras/courses.html">Extra Courses</a></li>
+      <li><a href="/ancient-greek/resources.html">Resources</a></li>
+      <li><a href="https://github.com/hocbigg/ancient-greek" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="extra-reading">Extra Reading</h1>
-<p>This document consists of great books or articles on Ancient Greek.
-Some are here because there is a course covering the same material;
-some are just great books that you should read at some point in your career.</p>
-<p>Once you have made it through most of the curriculum, knowing whether a book is worth your time will become easier.
-Or, if you are struggling in one of the courses, perhaps reading a book on the subject will help.</p>
-<h2 id="ancient-greek">Ancient Greek</h2>
-<table>
+  <main id="main-content">
+    <article>
+
+<h1 id="great-readings-in-ancient-greek">Great Readings in Ancient Greek</h1>
+<p>This curated collection gathers field-defining monographs, landmark essays, and influential intellectual studies in Ancient Greek philology, literature, and culture. These works explore the mechanics of oral composition, reconstruct archaic and classical mentalities, analyze the civic performance of tragedy, and trace how ancient texts survived antiquity.</p>
+<h2 id="orality-epic-tradition-and-formulaic-poetics">Orality, Epic Tradition, and Formulaic Poetics</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Greek-Intensive-Course-Hardy-Hansen/dp/0823216632">Greek: An Intensive Course</a></td>
-<td style="text-align: center;">Hardy Hansen &amp; Gerald M. Quinn</td>
+<td><a href="https://books.google.com/books?isbn=9780195205602" target="_blank" rel="noopener noreferrer"><em>The Making of Homeric Verse: The Collected Papers of Milman Parry</em></a></td>
+<td>Milman Parry (ed. Adam Parry)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://global.oup.com/academic/product/athenaze-book-i-9780190607661">Athenaze: An Introduction to Ancient Greek (Books I &amp; II)</a></td>
-<td style="text-align: center;">Maurice Balme, Gilbert Lawall, et al.</td>
+<td><a href="https://chs.harvard.edu/read/the-singer-of-tales/" target="_blank" rel="noopener noreferrer"><em>The Singer of Tales</em></a></td>
+<td>Albert B. Lord</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.ucpress.edu/book/9780520275713/introduction-to-attic-greek">Introduction to Attic Greek</a></td>
-<td style="text-align: center;">Donald J. Mastronarde</td>
+<td><a href="https://chs.harvard.edu/read/the-best-of-the-achaeans/" target="_blank" rel="noopener noreferrer"><em>The Best of the Achaeans: Concepts of the Hero in Archaic Greek Poetry</em></a></td>
+<td>Gregory Nagy</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780674699069" target="_blank" rel="noopener noreferrer"><em>Preface to Plato</em></a></td>
+<td>Eric A. Havelock</td>
 </tr>
 </tbody>
-</table>
-<h2 id="language-and-grammar">Language and Grammar</h2>
-<table>
+</table></div>
+<h2 id="archaic-and-classical-mindsets-psychology-myth-and-religion">Archaic and Classical Mindsets: Psychology, Myth, and Religion</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.cambridge.org/9780521698511">Reading Greek (Joint Association of Classical Teachers series)</a></td>
-<td style="text-align: center;">Joint Association of Classical Teachers</td>
+<td><a href="https://archive.org/details/greeksirrational0000dodd" target="_blank" rel="noopener noreferrer"><em>The Greeks and the Irrational</em></a></td>
+<td>E. R. Dodds</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Alpha-Omega-Beginning-Course-Classical/dp/1585104730">From Alpha to Omega: A Beginning Course in Classical Greek</a></td>
-<td style="text-align: center;">Anne H. Groton</td>
+<td><a href="https://books.google.com/books?isbn=9780674362819" target="_blank" rel="noopener noreferrer"><em>Greek Religion: Archaic and Classical</em></a></td>
+<td>Walter Burkert</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780486242644" target="_blank" rel="noopener noreferrer"><em>The Discovery of the Mind: The Greek Origins of European Thought</em></a></td>
+<td>Bruno Snell</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780520256439" target="_blank" rel="noopener noreferrer"><em>Shame and Necessity</em></a></td>
+<td>Bernard Williams</td>
 </tr>
 </tbody>
-</table>
-<h2 id="supplementary-texts-and-references">Supplementary Texts and References</h2>
-<table>
+</table></div>
+<h2 id="dramatic-form-ritual-and-the-athenian-polis">Dramatic Form, Ritual, and the Athenian Polis</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0058">An Intermediate Greek-English Lexicon (Liddell-Scott-Jones abridged)</a></td>
-<td style="text-align: center;">Henry George Liddell, Robert Scott</td>
+<td><a href="https://books.google.com/books?isbn=9780942299199" target="_blank" rel="noopener noreferrer"><em>Myth and Tragedy in Ancient Greece</em></a></td>
+<td>Jean-Pierre Vernant &amp; Pierre Vidal-Naquet</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Ancient-Greek-Alive-3rd/dp/080784800X">Ancient Greek Alive</a></td>
-<td style="text-align: center;">Paula Saffire, Catherine Freis</td>
+<td><a href="https://books.google.com/books?isbn=9781890951597" target="_blank" rel="noopener noreferrer"><em>The Invention of Athens: The Funeral Oration in the Classical City</em></a></td>
+<td>Nicole Loraux</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780198144861" target="_blank" rel="noopener noreferrer"><em>The Stagecraft of Aeschylus: The Dramatic Use of Exits and Entrances in Greek Tragedy</em></a></td>
+<td>Oliver Taplin</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781009183031" target="_blank" rel="noopener noreferrer"><em>Reading Greek Tragedy</em></a></td>
+<td>Simon Goldhill</td>
 </tr>
 </tbody>
-</table>
-</article>
-</main>
+</table></div>
+<h2 id="intellectual-history-philosophy-and-rhetoric">Intellectual History, Philosophy, and Rhetoric</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780872205284" target="_blank" rel="noopener noreferrer"><em>Magic, Reason and Experience: Studies in the Origin and Development of Greek Science</em></a></td>
+<td>G. E. R. Lloyd</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780521794725" target="_blank" rel="noopener noreferrer"><em>The Fragility of Goodness: Luck and Ethics in Greek Tragedy and Philosophy</em></a></td>
+<td>Martha C. Nussbaum</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780405115707" target="_blank" rel="noopener noreferrer"><em>Thucydides and Athenian Imperialism</em></a></td>
+<td>Jacqueline de Romilly</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780521286459" target="_blank" rel="noopener noreferrer"><em>The Art and Thought of Heraclitus</em></a></td>
+<td>Charles H. Kahn</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="linguistic-evolution-textual-criticism-and-material-transmission">Linguistic Evolution, Textual Criticism, and Material Transmission</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781107691766" target="_blank" rel="noopener noreferrer"><em>The Decipherment of Linear B</em></a></td>
+<td>John Chadwick</td>
+</tr>
+<tr>
+<td><a href="https://en.wikisource.org/wiki/The_Application_of_Thought_to_Textual_Criticism" target="_blank" rel="noopener noreferrer"><em>The Application of Thought to Textual Criticism</em></a></td>
+<td>A. E. Housman</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780199686339" target="_blank" rel="noopener noreferrer"><em>Scribes and Scholars: A Guide to the Transmission of Greek and Latin Literature</em></a></td>
+<td>L. D. Reynolds &amp; N. G. Wilson</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780198143420" target="_blank" rel="noopener noreferrer"><em>History of Classical Scholarship: From the Beginnings to the End of the Hellenistic Age</em></a></td>
+<td>Rudolf Pfeiffer</td>
+</tr>
+</tbody>
+</table></div>
+    </article>
+  </main>
 
 </body>
 </html>

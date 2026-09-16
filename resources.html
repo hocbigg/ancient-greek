@@ -1,131 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Resources</title>
-<link rel="stylesheet" href="/ancient-greek/style.css">
-<meta name="description" content="">
+  <title>Resources</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/ancient-greek/">
+  <link rel="canonical" href="https://hocbigg.github.io/ancient-greek/resources.html">
+  <meta property="og:title" content="Resources">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/ancient-greek/resources.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Resources">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/ancient-greek/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/ancient-greek/">Ancient-Greek</a>
-<a href="/ancient-greek/advanced_topics.html">Advanced Topics</a>
-<a href="/ancient-greek/extras/courses.html">Extra Courses</a>
-<a href="/ancient-greek/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/ancient-greek/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/ancient-greek/">Ancient Greek</a></li>
+      <li><a href="/ancient-greek/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/ancient-greek/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/ancient-greek/extras/courses.html">Extra Courses</a></li>
+      <li><a href="/ancient-greek/resources.html">Resources</a></li>
+      <li><a href="https://github.com/hocbigg/ancient-greek" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="resources">Resources</h1>
 <h2 id="vocabulary">Vocabulary</h2>
 <ul>
-<li>
-<p><strong>Dickinson College Commentaries Core Ancient Greek Vocabulary</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="https://dcc.dickinson.edu/vocabulary/core-vocabulary">dcc.dickinson.edu/vocabulary/core-vocabulary</a><br />
-  List of the 500 most frequent words in Ancient Greek, with definitions, frequency rankings, and downloadable formats; essential for building a high-coverage reading vocabulary.</p>
-</li>
-<li>
-<p><strong>Perseus Word Study Tool</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="http://www.perseus.tufts.edu/hopper/morph">www.perseus.tufts.edu/hopper/morph</a><br />
-  Integrated with texts in the Perseus library; provides morphological analysis, dictionary lookups (LSJ), and frequency information for any Greek word encountered in reading.</p>
-</li>
+<li><a href="https://dcc.dickinson.edu/greek-core-list" target="_blank" rel="noopener noreferrer">Dickinson College Commentaries Core Ancient Greek Vocabulary</a> - List of the 500 and 1,000 most frequent words in Ancient Greek, complete with definitions, frequency rankings, audio, and downloadable spreadsheets.</li>
+<li><a href="https://logeion.uchicago.edu/" target="_blank" rel="noopener noreferrer">Logeion (University of Chicago)</a> - Fast, modern multi-lexicon search engine providing simultaneous results from LSJ, Middle Liddell, Autenrieth, Bailly, and frequency statistics.</li>
+<li><a href="https://www.perseus.tufts.edu/hopper/morph" target="_blank" rel="noopener noreferrer">Perseus Word Study Tool</a> - Morphological analysis engine that identifies lemmas, parses inflected cases and conjugations, and links directly to dictionary definitions.</li>
+<li><a href="https://artflsrv03.uchicago.edu/efts/woodhouse/" target="_blank" rel="noopener noreferrer">Woodhouse's English-Greek Dictionary (University of Chicago)</a> - Searchable online edition of S.C. Woodhouse's standard reverse lexicon for prose composition and translation.</li>
+<li><a href="https://ankiweb.net/shared/decks/ancient%20greek" target="_blank" rel="noopener noreferrer">AnkiWeb Shared Decks for Ancient Greek</a> - Community-curated spaced-repetition flashcard decks covering vocabulary from standard textbooks (<em>Athenaze</em>, <em>Hansen &amp; Quinn</em>), core frequency lists, and principal parts.</li>
 </ul>
 <h2 id="grammar">Grammar</h2>
 <ul>
-<li>
-<p><strong>Herbert Weir Smyth's Greek Grammar</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0007">www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0007</a><br />
-  The standard comprehensive reference grammar for Ancient Greek, fully digitized and searchable with hyperlinks.</p>
-</li>
-<li>
-<p><strong>Textkit Greek and Latin Learning Tools</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="https://www.textkit.com/learn-greek/">www.textkit.com/learn-greek/</a><br />
-  Large collection of public-domain Greek grammars, readers, and reference works available for free PDF download (e.g., Goodwin's Greek Grammar, White's First Greek Book).</p>
-</li>
-<li>
-<p><strong>Ancient Greek for Everyone</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="https://ancientgreek.pressbooks.com">ancientgreek.pressbooks.com</a><br />
-  Free open-access introductory textbook with clear grammar explanations and exercises.</p>
-</li>
+<li><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0007" target="_blank" rel="noopener noreferrer">Herbert Weir Smyth's Greek Grammar</a> - The standard comprehensive reference grammar for classical Attic Greek, fully digitized and cross-linked.</li>
+<li><a href="https://atticgreek.org/" target="_blank" rel="noopener noreferrer">Ancient Greek Tutorials (Donald J. Mastronarde / UC Berkeley)</a> - Structured interactive web tutorials featuring native audio pronunciation, accent rules, drill exercises, and full inflection paradigms.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLq5ea-jR9u2puDaLoRL-nBkpwrkURbLjT" target="_blank" rel="noopener noreferrer">Learn Ancient Greek Playlist (Leonard Muellner / Harvard CHS)</a> - Complete 114-lecture open university course covering two full semesters of college-level classical Attic grammar.</li>
+<li><a href="https://www.textkit.com/learn-greek/" target="_blank" rel="noopener noreferrer">Textkit Greek and Latin Learning Tools</a> - Large library of free public-domain Greek grammars, primers, answer keys, and readers available as downloadable PDFs.</li>
+<li><a href="https://ancientgreek.pressbooks.com" target="_blank" rel="noopener noreferrer">Ancient Greek for Everyone</a> - Free, open-access introductory digital textbook emphasizing core patterns, vocabulary building, and syntax fundamentals.</li>
+<li><a href="https://dcc.dickinson.edu/grammar/greek/" target="_blank" rel="noopener noreferrer">DCC Greek Grammar Guide</a> - Searchable web edition of Goodell's <em>School Grammar of Attic Greek</em>, cross-linked directly with Dickinson text commentaries.</li>
 </ul>
 <h2 id="reading-comprehensible-input">Reading &amp; Comprehensible Input</h2>
 <ul>
-<li>
-<p><strong>Perseus Digital Library</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="http://www.perseus.tufts.edu/hopper/">www.perseus.tufts.edu/hopper/</a><br />
-  Vast collection of Ancient Greek texts (Homer, Plato, Herodotus, tragedy, etc.) with morphological tools, English translations, dictionaries, and word-by-word analysis for supported reading.</p>
-</li>
-<li>
-<p><strong>Dickinson College Commentaries</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="https://dcc.dickinson.edu">dcc.dickinson.edu</a><br />
-  Annotated editions of select Greek texts (e.g., Lysias, Plato, Homer) with notes, running vocabulary lists, grammatical help, and core vocabulary integration.</p>
-</li>
+<li><a href="https://geoffreysteadman.com/" target="_blank" rel="noopener noreferrer">Geoffrey Steadman's Greek Commentaries</a> - Free student editions of unadapted texts (Plato, Xenophon, Lysias, Homer, Euripides) with running facing-page vocabularies and grammatical notes.</li>
+<li><a href="https://www.perseus.tufts.edu/hopper/" target="_blank" rel="noopener noreferrer">Perseus Digital Library</a> - Vast open digital corpus of classical Greek literature equipped with hyperlinked translations, commentaries, and morphological analysis for every word.</li>
+<li><a href="https://dcc.dickinson.edu" target="_blank" rel="noopener noreferrer">Dickinson College Commentaries</a> - Web-based annotated editions of Greek prose and verse featuring inline grammatical explanations, vocabulary lists, and historical commentary.</li>
+<li><a href="https://opengreekandlatin.github.io/First1KGreek/" target="_blank" rel="noopener noreferrer">First1KGreek (Open Greek and Latin Project)</a> - Comprehensive open-access digital initiative providing machine-readable, canonical Greek texts from Homer through late antiquity.</li>
+<li><a href="https://www.hs-augsburg.de/~harsch/augustana.html" target="_blank" rel="noopener noreferrer">Bibliotheca Augustana (Graeca)</a> - Well-curated chronological digital library of full-text classical, Hellenistic, and Byzantine Greek literature.</li>
 </ul>
 <h2 id="writing-composition">Writing &amp; Composition</h2>
 <ul>
-<li>
-<p><strong>Athenaze Greek Exercises (University of Victoria)</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="http://web.uvic.ca/hrd/greek/">web.uvic.ca/hrd/greek/</a><br />
-  Interactive online exercises accompanying the popular Athenaze textbook, including grammar drills and sentence composition.</p>
-</li>
-<li>
-<p><strong>North &amp; Hillard Greek Prose Composition (with Key)</strong><br />
-  Covered in <a target="_blank" rel="noopener noreferrer" href="https://www.textkit.com/learn-greek/">Textkit Greek and Latin Learning Tools</a><br />
-  Classic exercises for English-to-Greek prose composition, with answer key; downloadable PDFs.</p>
-</li>
-<li>
-<p><strong>Pandionis Interactive Audio Exercises</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="https://pandionis.com/intro_en.html">pandionis.com</a><br />
-  Free interactive exercises focused on producing Greek sentences (speaking/writing practice) using reconstructed pronunciation.</p>
-</li>
+<li><a href="https://web.uvic.ca/hrd/greek/" target="_blank" rel="noopener noreferrer">Athenaze Greek Exercises (University of Victoria)</a> - Interactive online exercises aligned with the <em>Athenaze</em> textbook series, including morphological drills, Cloze tests, and translation composition.</li>
+<li><a href="https://www.textkit.com/greek_grammar_prose_composition.php" target="_blank" rel="noopener noreferrer">North &amp; Hillard Greek Prose Composition (Textkit)</a> - Classic systematic textbook for learning to compose idiomatic Attic Greek sentences, accompanied by a downloadable answer key.</li>
+<li><a href="https://pandionis.com/intro_en.html" target="_blank" rel="noopener noreferrer">Pandionis Interactive Audio Exercises</a> - Free interactive exercises focused on active oral and written sentence construction using historical reconstructed pronunciation.</li>
+<li><a href="https://archive.org/details/introductiontogr00sidgrich" target="_blank" rel="noopener noreferrer">Sidgwick's Introduction to Greek Prose Composition (Internet Archive)</a> - Advanced manual covering Greek sentence architecture, idiom, particles, and continuous narrative composition with extensive notes.</li>
 </ul>
-<h2 id="listening">Listening</h2>
+<h2 id="listening-spoken-greek">Listening &amp; Spoken Greek</h2>
 <ul>
-<li>
-<p><strong>Polis Institute Audio Recordings</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="https://www.polisjerusalem.org/resources/audios/">www.polisjerusalem.org/resources/audios/</a><br />
-  High-quality spoken recordings of Ancient Greek and Koine texts using the Polis method's lively, restored pronunciation.</p>
-</li>
-<li>
-<p><strong>Rhapsodoi Ancient Greek Recordings</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="https://soundcloud.com/rhapsodoi/sets/ancient-greek-recordings">soundcloud.com/rhapsodoi/sets/ancient-greek-recordings</a><br />
-  Playlist of spoken readings from various Ancient Greek authors.</p>
-</li>
-<li>
-<p><strong>Alpha with Angela YouTube Channel</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@alphawithangela">www.youtube.com/@alphawithangela</a><br />
-  Comprehensible input videos in spoken Koine/Ancient Greek, suitable for building aural familiarity (active channel with beginner-friendly content).</p>
-</li>
+<li><a href="https://www.polisjerusalem.org/resources/audios/" target="_blank" rel="noopener noreferrer">Polis Institute Audio Resources</a> - High-quality spoken recordings of classical and Koine Greek texts produced using active living-language immersion methods.</li>
+<li><a href="https://www.youtube.com/@ScorpioMartianus" target="_blank" rel="noopener noreferrer">ScorpioMartianus (Luke Ranieri / YouTube)</a> - Immersion videos, spoken dialogues, and pedagogical guides illustrating reconstructed historical Attic and Koine pronunciation.</li>
+<li><a href="https://www.youtube.com/@podiumarts" target="_blank" rel="noopener noreferrer">Ioannis Stratakis / Podium Arts (YouTube)</a> - Expressive readings of Homer, Plato, and lyric poetry focusing on accurate metrical rhythm and classical pitch accent.</li>
+<li><a href="https://www.youtube.com/@alphawithangela" target="_blank" rel="noopener noreferrer">Alpha with Angela (YouTube)</a> - Comprehensible input video lessons teaching spoken Koine and Ancient Greek naturally through physical actions, storytelling, and visual context.</li>
+<li><a href="https://soundcloud.com/rhapsodoi/sets/ancient-greek-recordings" target="_blank" rel="noopener noreferrer">Rhapsodoi Ancient Greek Recordings (SoundCloud)</a> - Curated collection of spoken excerpts from major ancient authors performed with reconstructed pronunciation.</li>
+<li><a href="http://www.sorgll.org/" target="_blank" rel="noopener noreferrer">SORGLL (Society for the Oral Reading of Greek and Latin Literature)</a> - Archival audio repository demonstrating authentic recitation techniques for epic hexameter, tragic meters, and rhetorical prose.</li>
 </ul>
 <h2 id="cultural-historical-context">Cultural &amp; Historical Context</h2>
 <ul>
-<li><strong>Introduction to Ancient Greek History (Open Yale Courses)</strong><br />
-<a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/classics/clcv-205">oyc.yale.edu/classics/clcv-205</a><br />
-  Full video lecture series by Donald Kagan tracing Greek civilization from the Bronze Age to the Classical period, with transcripts and readings.</li>
+<li><a href="https://oyc.yale.edu/classics/clcv-205" target="_blank" rel="noopener noreferrer">Introduction to Ancient Greek History (Open Yale Courses)</a> - Full 24-lecture university video series by Donald Kagan tracing ancient Greek civilization from the Bronze Age through the fall of Athens.</li>
+<li><a href="https://www.greecedeclassified.com/" target="_blank" rel="noopener noreferrer">Ancient Greece Declassified Podcast</a> - Accessible, interview-based scholarly podcast exploring ancient Greek philosophy, political theory, archaeology, and literature.</li>
+<li><a href="https://chs.harvard.edu/" target="_blank" rel="noopener noreferrer">Center for Hellenic Studies (Harvard University)</a> - Academic hub providing open-access monographs, scholarly articles, lecture series, and digital publications on Hellenic literature and society.</li>
 </ul>
-<h2 id="other">Other</h2>
+<h2 id="digital-tools-study-aids">Digital Tools &amp; Study Aids</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://fass.open.ac.uk/classical-studies/learning-ancient-greek">Learning Ancient Greek - Faculty of Arts and Social Sciences</a></li>
+<li><a href="https://alpheios.net/" target="_blank" rel="noopener noreferrer">Alpheios Reading Tools</a> - Free browser extension that provides instant morphological parsing, inflection tables, and dictionary definitions when double-clicking Greek words on any website.</li>
+<li><a href="https://community.dur.ac.uk/p.j.heslin/Software/Diogenes/" target="_blank" rel="noopener noreferrer">Diogenes</a> - Free desktop software designed for fast, granular lexical searches across classical databases (TLG, PHI) with integrated LSJ lexica.</li>
+<li><a href="https://greekfontsociety-gfs.gr/" target="_blank" rel="noopener noreferrer">Greek Font Society (GFS)</a> - Archive of free, open-source digital typefaces based on historical classical and Renaissance Greek typography.</li>
+<li><a href="https://fass.open.ac.uk/classical-studies/learning-ancient-greek" target="_blank" rel="noopener noreferrer">Learning Ancient Greek (The Open University / OpenLearn)</a> - Introductory study guides, taster modules, and independent learning advice for self-directed classicists.</li>
 </ul>
-</article>
-</main>
+    </article>
+  </main>
 
 </body>
 </html>
