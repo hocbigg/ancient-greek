@@ -3,138 +3,97 @@ title: Hocbigg - Ancient Greek
 description: Path to a free self-taught education in Ancient Greek!
 ---
 
-# Contents
+## Introduction
 
-- [Summary](#summary)
-- [Communities](#communities)
-- [Curriculum](#curriculum)
-- [Code of conduct](#code-of-conduct)
+Studying Ancient Greek provides direct, unmediated access to the foundational texts of Western literature, philosophy, drama, and historiography. Rather than relying on modern translations that inevitably smooth over ideological tensions, rhetorical nuances, and poetic meters, learning the language allows you to encounter authors like Homer, Plato, and Euripides on their own terms. 
 
-# Summary
+This curriculum is designed for absolute beginners and assumes no prior background in classical philology, Latin, or linguistics. It establishes a complete foundational baseline, taking you from the Greek alphabet and basic noun-verb morphology to reading unadapted classical prose and verse. Its scope is deliberately focused on the two primary literary dialects of the classical period: Attic Greek, the literary standard of fifth- and fourth-century BCE Athens, and Homeric Greek, the archaic artificial dialect of epic poetry. Post-classical developments (such as Hellenistic Koine, the Second Sophistic, and Byzantine Greek) and auxiliary material disciplines are reserved for subsequent study.
 
-The Ancient Greek curriculum is a complete education in Ancient Greek using online materials (focusing on Attic Greek of the Classical period, with extensions to Homeric and Koine).
+Because classical language acquisition is strictly cumulative, you should work through the subjects in a clear linear progression:
 
-The program emphasizes progressive language acquisition, literary reading, historical/cultural context, and analytical skills. Logical sequencing builds from fundamentals to advanced textual engagement.
+- **Grammatical Foundation:** Begin with *Foundations of Attic Greek*. Mastering nominal declensions, the principal parts of the verb system, and foundational syntax is mandatory before attempting continuous ancient texts.
+- **Prose Fluency and Active Syntax:** Transition directly into *Intermediate Attic Prose* and *Greek Syntax and Prose Composition*. Reading unadapted historical narrative and courtroom oratory (Xenophon, Lysias) builds reading stamina, while active prose composition reinforces complex clause structures (such as conditional sentences and indirect discourse) from the inside out.
+- **Philosophical Prose:** Advance to *Classical Philosophy: Plato* to develop confidence with philosophical dialogue, conversational idiom, and sustained dialectical argument.
+- **Poetic Dialects and Meters:** Tackle verse only after establishing solid prose fluency. *Homeric Epic Poetry* introduces archaic epic morphology and dactylic hexameter, while *Attic Drama and Tragedy* transitions into fifth-century tragic diction, iambic trimeter, and choral lyric.
+- **Historical Framework:** *Greek Historical and Cultural Context* should be studied alongside your intermediate coursework or immediately following it, providing the civic and historical grounding required to interpret these texts in their original environments.
+
+Once you have completed this core sequence and achieved reading fluency in Attic and epic texts, you can branch out into specialized subfields in [Advanced Topics](advanced_topics.md), including historical linguistics, epigraphy, papyrology, and post-classical Greek. To explore landmark secondary scholarship on Greek religion, oral-formulaic theory, and textual criticism, consult [Readings](extras/readings.md); for complementary university lecture series and open audio deep-dives, see [Courses](extras/courses.md).
 
 The resource page can be found here: [ancient-greek/resources](resources.md).
 
-## Organization
-
-This repository is organized into 2 main components:
-
-- **Core Curriculum** (this page): the foundational knowledge of the field;
-- **[Advanced Topics](advanced_topics.md)**: focused study in specific areas;
-
-**Process:** Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.
-
-- For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.
-- The Core Curriculum provides a shared foundation and is intended to be completed in full.
-- Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.
-
-Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md).
-
-**[How to contribute](/CONTRIBUTING.html)**
-
-# Communities
+### Communities
 
 - Forums: [Textkit Greek and Latin Forums](https://www.textkit.com/greek-latin-forum/)
 - Subreddits: [r/AncientGreek](https://www.reddit.com/r/AncientGreek/)
 - Discord servers: [Latin & Ancient Greek](https://discord.gg/latin)
 - You can also interact through [GitHub issues](https://github.com/hocbigg/ancient-greek/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
-- Join our Discord server (for discussions around this and other curricula): 
-    
-    [![discord link](/assets/discord.png)](https://discord.gg/KHqAv4Nvm5)
 
-# Curriculum
+## Curriculum
 
-- [Foundations of Ancient Greek (Attic)](#foundations-of-ancient-greek-attic)
-    - [Core Grammar](#core-grammar)
-    - [Reading Support & Lexical Tools](#reading-support--lexical-tools)
-- [Intermediate Attic Prose & Syntax](#intermediate-attic-prose--syntax)
-    - [Core Prose & Historiography](#core-prose--historiography)
-    - [Advanced Syntax & Composition](#advanced-syntax--composition)
-- [Classical Philosophy: Plato](#classical-philosophy-plato)
-- [Classical Greek Poetry: Epic & Attic Drama](#classical-greek-poetry-epic--attic-drama)
-- [Historical & Cultural Context](#historical--cultural-context)
+### Foundations of Attic Greek
 
-1. Foundations of Ancient Greek (Attic)
-   Start here. This stage teaches the core morphology, nominal declensions, verbal conjugations, and basic syntax of classical Attic Greek. Mastering these elements is mandatory before approaching continuous ancient texts.
+Covers the nominal declensions, verbal conjugations, core vocabulary, and foundational syntax of classical Attic Greek.
 
-2. Intermediate Attic Prose & Syntax
-   Immediately after Foundations. This stage builds reading fluency through continuous, unadapted classical prose (Xenophon, Lysias) while reinforcing syntactic mastery through active prose composition and syntax reference study.
+[Introduction to Attic Greek by Donald J. Mastronarde (University of California Press)](https://books.google.com/books?isbn=9780520275713) - The primary foundational textbook, offering systematic explanations of Attic morphology, accentuation, and basic sentence structure.
 
-3. Classical Philosophy: Plato
-   Tackle this next. Plato's early and middle dialogues represent the pinnacle of classical Attic dialogue and philosophical argument. Reading Plato solidifies intermediate prose comprehension and introduces central concepts of Greek thought.
+[Ancient Greek Tutorials (Donald J. Mastronarde / UC Berkeley)](https://atticgreek.org/) - An open-access interactive companion designed to reinforce Mastronarde's textbook through audio pronunciation guides, accent tutorials, and morphological drills.
 
-4. Classical Greek Poetry: Epic & Attic Drama
-   Study this after establishing solid prose fluency. This stage introduces the Homeric/Epic dialect, dactylic hexameter, and Attic tragedy (Euripides, Sophocles) with iambic trimeter and lyric meters.
+[Learn Ancient Greek (Harvard Center for Hellenic Studies / Prof. Leonard Muellner)](https://www.youtube.com/playlist?list=PLq5ea-jR9u2puDaLoRL-nBkpwrkURbLjT) - A complete 114-lecture open video course delivering two semesters of university grammar instruction, closely coordinated with Hansen and Quinn.
 
-5. Historical & Cultural Context
-   Study this alongside or directly following your language coursework. It provides the historical, political, and literary framework necessary to interpret classical texts in their historical context.
+[Greek: An Intensive Course by Hardy Hansen and Gerald M. Quinn (Fordham University Press)](https://books.google.com/books?isbn=9780823216635) - A fast-paced, drill-intensive alternative to Mastronarde that pairs directly with Professor Muellner’s video lectures.
 
-## Foundations of Ancient Greek (Attic)
+### Intermediate Attic Prose
 
-### Core Grammar
+Covers continuous, unadapted classical Attic narrative and forensic oratory to transition students from isolated textbook sentences to genuine ancient literature.
 
-| Subject | Resource |
-| --- | --- |
-| Attic Greek Grammar (Beginner & Intermediate) | - [Hansen & Quinn, *Greek: An Intensive Course*](https://archive.org/details/greekintensiveco0000hans)<br/>- Donald J. Mastronarde, *Introduction to Attic Greek* (University of California Press)<br/>- [Ancient Greek Tutorials (Mastronarde / UC Berkeley)](https://atticgreek.org/) |
-| Comprehensive Reference Grammar | [Smyth, *Greek Grammar*](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0007) (Perseus Digital Library) |
-| Lexica & Morphological Tools | - [Logeion Lexicon Database (University of Chicago)](https://logeion.uchicago.edu/)<br/>- [DCC Greek Core Vocabulary (Dickinson College Commentaries)](https://dcc.dickinson.edu/greek-core-list) |
+[Xenophon's Anabasis I: Text with Facing Vocabulary and Commentary by Geoffrey Steadman](https://geoffreysteadman.com/xenophon-anabasis-i/) - An open-access guided reader featuring running vocabulary and syntax notes on facing pages, serving as the standard initial bridge to continuous prose.
 
-### Reading Support & Lexical Tools
+[Lysias I: On the Murder of Eratosthenes: Text with Facing Vocabulary and Commentary by Geoffrey Steadman](https://geoffreysteadman.com/lysias-i/) - A sequential reader to study after Xenophon, introducing standard Attic courtroom rhetoric and idiomatic conversational syntax.
 
-| Tool | Resource |
-| --- | --- |
-| Annotated Student Commentaries | - [Dickinson College Commentaries (DCC)](https://dcc.dickinson.edu/)<br/>- [Geoffrey Steadman, *Greek Texts with Facing Vocabulary and Commentary*](https://geoffreysteadman.com/) |
-| Text Corpus & Lemmatizer | [Perseus Digital Library](https://www.perseus.tufts.edu/hopper/) |
+### Greek Syntax and Prose Composition
 
-## Intermediate Attic Prose & Syntax
+Covers advanced Attic sentence structure, mood usage (subjunctive and optative), and active composition from English into Greek to solidify grammatical mastery.
 
-### Core Prose & Historiography
+[An Introduction to the Composition and Analysis of Greek Prose by Eleanor Dickey (Cambridge University Press)](https://books.google.com/books?isbn=9780521184250) - Canonical modern textbook for mastering complex Attic syntax through linguistic explanations, clause analysis, and active composition exercises.
 
-| Author & Genre | Resources |
-| --- | --- |
-| Xenophon (Historical Narrative) | - [Xenophon, *Anabasis* (Perseus)](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0202)<br/>- [Geoffrey Steadman, *Xenophon's Anabasis I & IV*](https://geoffreysteadman.com/) |
-| Lysias (Forensic Oratory) | - [Lysias, *Selected Speeches* (Perseus)](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:author-Lysias)<br/>- [Geoffrey Steadman, *Lysias I: On the Murder of Eratosthenes*](https://geoffreysteadman.com/) |
-| Herodotus & Thucydides (Historiography Survey) | [Greco-Roman Collection (Perseus)](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman) |
+[Greek Prose Composition by Henry Carr Pearson (American Book Company / Internet Archive)](https://archive.org/details/greekprosecompos00pearrich) - A public-domain alternative and supplementary drill book focused on sentence-level translation exercises keyed to Xenophon's vocabulary.
 
-### Advanced Syntax & Composition
+### Classical Philosophy: Plato
 
-| Subject | Resource |
-| --- | --- |
-| Advanced Syntax Reference | Herbert Weir Smyth, *Greek Grammar* (Harvard University Press) |
-| Greek Prose Composition | - [Pearson, *Greek Prose Composition*](https://archive.org/details/greekprosecompos00pearrich)<br/>- Eleanor Dickey, *An Introduction to the Composition and Analysis of Greek Prose* (Cambridge University Press) |
+Covers Socratic dialogue, dialectical argumentation, and the literary style of middle-period Platonic prose.
 
-## Classical Philosophy: Plato
+[Plato's Apology: Text with Facing Vocabulary and Commentary by Geoffrey Steadman](https://geoffreysteadman.com/platos-apology/) - The primary entry text for Platonic Greek, supported by facing vocabulary and grammatical notes to ease the transition into philosophical dialogue.
 
-| Subject / Author | Resource |
-| --- | --- |
-| Socratic Dialogues | - [Plato Collection (Perseus)](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:author-Plato)<br/>- [Geoffrey Steadman, *Plato's Apology & Crito: Text with Facing Vocabulary*](https://geoffreysteadman.com/) |
-| Middle Dialogues | - [Geoffrey Steadman, *Plato's Meno, Republic I, and Symposium*](https://geoffreysteadman.com/)<br/>- Cambridge Greek and Latin Classics (Green and Yellow series): Plato's *Symposium* / *Phaedo* |
-| Philosophical Context | [Open Yale Courses – Introduction to Political Philosophy (PLSC 114)](https://oyc.yale.edu/political-science/plsc-114) |
+[Plato's Crito: Text with Facing Vocabulary and Commentary by Geoffrey Steadman](https://geoffreysteadman.com/platos-crito/) - A direct sequel to the Apology that reinforces Platonic ethical argumentation and conversational syntax at the intermediate level.
 
-## Classical Greek Poetry: Epic & Attic Drama
+[Plato: Symposium, edited by Kenneth Dover (Cambridge University Press)](https://books.google.com/books?isbn=9780521295239) - A scholarly commentary to tackle after Steadman's readers, providing advanced philological and literary analysis of unadapted Platonic prose.
 
-| Genre / Dialect | Resources |
-| --- | --- |
-| Homeric Epic (Epic Dialect & Dactylic Hexameter) | - Clyde Pharr, *Homer's Iliad: Books I-VI* (University of Oklahoma Press)<br/>- [Geoffrey Steadman, *Homer's Iliad 6 & 22; Odyssey 6-8, 9-12*](https://geoffreysteadman.com/)<br/>- [Homer Collection (Perseus)](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman) |
-| Attic Tragedy (Dramatic Dialogue & Iambic Trimeter) | - Euripides, *Medea* / Sophocles, *Antigone* (Cambridge Greek and Latin Classics)<br/>- [Geoffrey Steadman, *Euripides' Medea* & *Sophocles' Oedipus Tyrannus*](https://geoffreysteadman.com/)<br/>- [Greek Drama Collection (Perseus)](https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman) |
+[PLSC 114: Introduction to Political Philosophy (Open Yale Courses)](https://oyc.yale.edu/political-science/plsc-114) - A free lecture series whose opening lectures provide contextual background on the historical trial of Socrates and Plato's political philosophy.
 
-## Historical & Cultural Context
+### Homeric Epic Poetry
 
-| Subject | Resource |
-| --- | --- |
-| Greek History | - [Open Yale Courses – CLCV 205: Introduction to Ancient Greek History (Donald Kagan)](https://oyc.yale.edu/classics/clcv-205)<br/>- Thomas R. Martin, *Ancient Greece: From Prehistoric to Hellenistic Times* (Yale University Press) |
-| Greek Literature & Culture | - P. E. Easterling and B. M. W. Knox (eds.), *The Cambridge History of Classical Literature: Volume 1, Early Greek Literature* (Cambridge University Press)<br/>- [Perseus Collection Essays & Historical Overviews](https://www.perseus.tufts.edu/hopper/) |
+Covers the Homeric dialect, archaic epic morphology, and dactylic hexameter meter through Homer's Iliad and Odyssey.
 
-## Congratulations
+[Homeric Greek: A Book for Beginners by Clyde Pharr, revised by John Wright and Paula Debnar (University of Oklahoma Press)](https://books.google.com/books?isbn=9780806141640) - The foundational transitional textbook that systematically introduces the grammar, dialectical forms, and meter of epic poetry using Iliad Book 1.
 
-After completing the requirements of the curriculum above,
-you will have completed the equivalent of a full bachelor's degree in Ancient Greek.
-Congratulations!
+[Homer's Iliad 6 & 22: Text with Facing Vocabulary and Commentary by Geoffrey Steadman](https://geoffreysteadman.com/iliad-6-22/) - Open-access guided reader designed to follow Pharr's textbook, providing running vocabulary and metrical aids for two major books of the Iliad.
 
-# Code of conduct
+[Homer's Odyssey 6–8: Text with Facing Vocabulary and Commentary by Geoffrey Steadman](https://geoffreysteadman.com/homers-odyssey-6-8/) - A complementary guided reader to be studied alongside or after the Iliad selections, focusing on epic narrative style in the Odyssey.
 
-[Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
+### Attic Drama and Tragedy
+
+Covers the poetic syntax, tragic vocabulary, and dramatic meters (iambic trimeter and choral lyric) of classical Athenian tragedy.
+
+[Euripides' Medea: Text with Facing Vocabulary and Commentary by Geoffrey Steadman](https://geoffreysteadman.com/euripides-medea/) - An open-access guided reader providing facing vocabulary and parsing aids, serving as the gentlest initial entry into reading dramatic verse.
+
+[Euripides: Medea, edited by Donald J. Mastronarde (Cambridge University Press)](https://books.google.com/books?isbn=9780521643863) - An advanced commentary to use alongside or after Steadman, notable for its dedicated introductory treatise on tragic language, style, and meters.
+
+### Greek Historical and Cultural Context
+
+Covers the historical, political, and literary development of archaic and classical Greece to provide the interpretive framework necessary for reading ancient literature.
+
+[CLCV 205: Introduction to Ancient Greek History by Donald Kagan (Open Yale Courses)](https://oyc.yale.edu/classics/clcv-205) - A comprehensive 24-lecture university course detailing the development of the Greek polis, the Persian and Peloponnesian Wars, and Athenian democracy.
+
+[Ancient Greece: From Prehistoric to Hellenistic Times by Thomas R. Martin (Yale University Press)](https://books.google.com/books?isbn=9780300160055) - A concise, accessible narrative history that serves as the primary companion reading for Donald Kagan’s lecture series.
+
+[The Cambridge History of Classical Literature: Volume 1, Greek Literature, edited by P. E. Easterling and B. M. W. Knox (Cambridge University Press)](https://books.google.com/books?isbn=9780521210423) - The standard historical reference survey covering the cultural context, genres, and authors of Greek literature from Homer to the classical period.

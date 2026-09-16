@@ -1,51 +1,73 @@
 # Advanced Topics
 
-Once you have completed the Core Undergraduate Curriculum in Ancient Greek, you can pursue specialized study across advanced philological, historical, and methodological subfields. These tracks represent the primary domains of graduate-level classical scholarship and independent research.
+Having completed the foundational and intermediate undergraduate curriculum in classical Attic and Homeric Greek, you can pursue specialized study across several advanced philological, historical, and linguistic subfields. Rather than attempting to complete every track, you should select one or two specialization tracks that align directly with your research interests and reading goals.
 
 ### Specialization Tracks
 
-- [Archaic Lyric and Hellenistic Poetics](#archaic-lyric-and-hellenistic-poetics): Explores non-epic archaic poetry, complex lyric metres, and the erudite, book-oriented aesthetics of Alexandrian literature.
-- [Historical Linguistics, Dialectology, and Textual Criticism](#historical-linguistics-dialectology-and-textual-criticism): Investigates the diachronic evolution of Greek from Proto-Indo-European through Mycenaean Linear B, regional epichoric dialects, and manuscript stemmatics.
-- [Material Philology: Epigraphy, Papyrology, and Palaeography](#material-philology-epigraphy-papyrology-and-palaeography): Provides direct training in transcribing, dating, and contextualizing stone inscriptions, papyrus fragments, and medieval codices.
-- [Classical Historiography, Rhetoric, and Political Thought](#classical-historiography-rhetoric-and-political-thought): Analyzes narrative methodology, forensic/deliberative rhetorical architecture, and the late antique philosophical commentary tradition.
-- [Post-Classical, Koine, and Byzantine Greek](#post-classical-koine-and-byzantine-greek): Traces the linguistic transformations of Greek from the Hellenistic Mediterranean lingua franca through the Second Sophistic to medieval Byzantine administration.
+- [Archaic Lyric and Hellenistic Poetics](#archaic-lyric-and-hellenistic-poetics): Covers non-epic archaic lyric song, complex strophic meters, and the learned, allusive poetry of the Alexandrian period.
+- [Historical Linguistics, Dialectology, and Textual Criticism](#historical-linguistics-dialectology-and-textual-criticism): Traces the diachronic evolution of the language from Proto-Indo-European through Mycenaean Linear B, regional epichoric dialects, and the principles of manuscript stemmatics.
+- [Material Philology: Epigraphy, Papyrology, and Palaeography](#material-philology-epigraphy-papyrology-and-palaeography): Develops practical skills in transcribing, editing, and dating stone inscriptions, papyrus documents, and Byzantine medieval manuscripts.
+- [Classical Historiography, Rhetoric, and Political Thought](#classical-historiography-rhetoric-and-political-thought): Examines historical narrative architecture, judicial and deliberative oratorical style, classical rhetorical theory, and the post-classical philosophical tradition.
+- [Post-Classical, Koine, and Byzantine Greek](#post-classical-koine-and-byzantine-greek): Analyzes the structural evolution of the language from Hellenistic Koine and the Imperial Second Sophistic through high-register and vernacular Byzantine Greek.
 
 ## Archaic Lyric and Hellenistic Poetics
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Archaic Melic & Elegiac Poetry | Investigates the fragmentary personal and choral lyric traditions of archaic Greece (Sappho, Alcaeus, Archilochus, Pindar, Bacchylides) and their intricate performative, ritual, and dialectal frameworks. | - D. A. Campbell (ed. & trans.), *Greek Lyric*, Vols. I–V (Loeb Classical Library / Harvard University Press)<br>- D. L. Page, *Poetae Melici Graeci* (Oxford Classical Texts)<br>- [Perseus Greek Lyric Authors Collection](https://www.perseus.tufts.edu/hopper/) |
-| Hellenistic Alexandrian Poetics | Examines the high-style, learned poetry of the 3rd to 1st centuries BCE (Callimachus, Theocritus, Apollonius of Rhodes), characterized by programmatic allusiveness, aetiology, and generic experimentation. | - Kathryn J. Gutzwiller, *A Guide to Hellenistic Literature* (Wiley-Blackwell)<br>- Richard Hunter, *The Shadow of Callimachus* (Cambridge University Press)<br>- A. S. F. Gow, *Theocritus: Edited with a Translation and Commentary*, Vols. I–II (Cambridge University Press) |
-| Greek Metrics & Colometry | Provides the analytical system required to scan and interpret complex strophic meters, including dactylo-epitrite, aeolic lyric, dochmiacs, and stichic verse systems. | - M. L. West, *Greek Metre* (Oxford University Press)<br>- Paul Maas, *Greek Metre* (trans. H. Lloyd-Jones, Oxford Clarendon Press) |
+Investigates non-epic archaic song, complex strophic meters, and the learned, allusive poetry of the Alexandrian period.
+
+Archaic Melic & Elegiac Poetry: [Greek Lyric Poetry: A Selection of Early Greek Lyric, Elegiac and Iambic Poetry by David A. Campbell (Bristol Classical Press)](https://books.google.com/books?isbn=9780862920081) - Provides the standard annotated Greek texts of Archilochus, Sappho, Alcaeus, and Simonides, with extensive linguistic notes on non-Attic poetic dialects and archaic symposiastic context.
+
+Hellenistic Alexandrian Poetics: [A Guide to Hellenistic Literature by Kathryn Gutzwiller (Wiley-Blackwell)](https://books.google.com/books?isbn=9780631233220) - An authoritative critical survey detailing the aesthetics, cultural context, and generic experimentation of Callimachus, Theocritus, and Apollonius of Rhodes.
+
+Hellenistic Epic & Pastoral Reading: [Apollonius of Rhodes: Argonautica Book III, edited by Richard Hunter (Cambridge University Press)](https://books.google.com/books?isbn=9780521313803) - Provides a student-oriented commentary on unadapted Hellenistic hexameter, focusing on psychological characterization, Homeric imitation, and Alexandrian narrative technique.
+
+Greek Metrics & Colometry: [Introduction to Greek Metre by M. L. West (Oxford University Press)](https://books.google.com/books?isbn=9780198721291) - A systematic handbook designed to teach students how to scan, analyze, and interpret complex lyric meters, including aeolic, dactylo-epitrite, and dochmiac strophes.
 
 ## Historical Linguistics, Dialectology, and Textual Criticism
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Indo-European & Historical Greek Grammar | Examines the diachronic phonological and morphological shifts from Proto-Indo-European into Greek, including ablaut series, laryngeal reflexes, consonant shifts, and verbal aspect development. | - Andrew L. Sihler, *New Comparative Grammar of Greek and Latin* (Oxford University Press)<br>- Robert Beekes and Lucien van Beek, *Etymological Dictionary of Greek* (Brill)<br>- Geoffrey Horrocks, *Greek: A History of the Language and Its Speakers* (Wiley-Blackwell) |
-| Epichoric Dialects & Mycenaean Greek | Explores regional non-Attic varieties (Ionic, Doric, Aeolic, Arcado-Cypriot) and the syllabic Bronze Age administrative texts of Linear B deciphered by Michael Ventris. | - Carl Darling Buck, *The Greek Dialects: Grammar, Selected Inscriptions, Glossary* (Bristol Classical Press)<br>- Michael Ventris and John Chadwick, *Documents in Mycenaean Greek* (Cambridge University Press)<br>- L. H. Jeffery, *The Local Scripts of Archaic Greece* (Oxford Clarendon Press) |
-| Textual Criticism & Editorial Technique | Trains researchers to evaluate manuscript variations, build stemmata codicum, detect scribal interpolations, construct an apparatus criticus, and produce conjectural emendations. | - Paul Maas, *Textual Criticism* (Oxford Clarendon Press)<br>- M. L. West, *Textual Criticism and Editorial Technique* (B. G. Teubner / De Gruyter) |
+Traces the diachronic evolution of Greek from Proto-Indo-European through Mycenaean Linear B, regional epichoric dialects, and manuscript stemmatics.
+
+Comparative Indo-European Grammar: [Introduction to Comparative Indo-European Linguistics (Leiden University / Coursera)](https://www.coursera.org/learn/comparative-indo-european-linguistics) - A free audit MOOC exploring comparative linguistic reconstruction, ablaut systems, sound laws, and the historical relationship between Greek and other early Indo-European languages.
+
+Historical Greek & Latin Grammar: [New Comparative Grammar of Greek and Latin by Andrew L. Sihler (Oxford University Press)](https://books.google.com/books?isbn=9780195083453) - The standard historical reference grammar detailing phonological sound shifts, laryngeal reflexes, and morphological changes from Proto-Indo-European into Greek.
+
+Epichoric Dialects & Mycenaean Greek: [The Greek Dialects by Carl Darling Buck (Wipf and Stock)](https://books.google.com/books?isbn=9781666731835) - A comprehensive reference manual and commented collection of regional inscriptions covering West Greek, Doric, Aeolic, Ionic, and Arcado-Cypriot dialect features.
+
+Textual Criticism & Stemmatics: [Textual Criticism and Editorial Technique by Martin L. West (Walter de Gruyter)](https://books.google.com/books?isbn=9783598774010) - The classic practical guide to analyzing manuscript variation, constructing stemmata codicum, identifying scribal errors, and applying conjectural emendation.
 
 ## Material Philology: Epigraphy, Papyrology, and Palaeography
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Greek Epigraphy | Develops fluency in reading unmediated civic decrees, financial accounts, treaties, and funerary monuments inscribed on stone and bronze throughout the Mediterranean basin. | - Arthur G. Woodhead, *The Study of Greek Inscriptions* (Cambridge University Press)<br>- John Bodel (ed.), *Epigraphic Evidence: Ancient History from Inscriptions* (Routledge)<br>- [Searchable Greek Inscriptions Database (Packard Humanities Institute)](https://inscriptions.packhum.org/)<br>- [Supplementum Epigraphicum Graecum (SEG)](https://scholarlyeditions.brill.com/sego/) |
-| Documentary & Literary Papyrology | Teaches the decipherment and editorial transcription of cursive everyday documents, letters, tax receipts, and lost literary fragments preserved on papyrus in Ptolemaic and Roman Egypt. | - E. G. Turner, *Greek Papyri: An Introduction* (Oxford Clarendon Press)<br>- R. S. Bagnall (ed.), *The Oxford Handbook of Papyrology* (Oxford University Press)<br>- [Papyri.info Database (Duke Collaboratory for Classics Computing)](https://papyri.info/) |
-| Greek Palaeography & Manuscript Transmission | Traces the physical transmission of classical Greek texts through Byzantine minuscule scripts, ligatures, codicological bindings, and scholarly marginal scholia. | - Ruth Barbour, *Greek Literary Hands A.D. 400–1600* (Oxford University Press)<br>- L. D. Reynolds and N. G. Wilson, *Scribes and Scholars: A Guide to the Transmission of Greek and Latin Literature* (Oxford University Press)<br>- Nigel G. Wilson, *Scholars of Byzantium* (Duckworth) |
+Develops practical skills in transcribing, editing, and dating stone inscriptions, papyrus documents, and Byzantine medieval manuscripts.
+
+Greek Epigraphy & Digital Editions: [Sunoikisis Digital Classics (University of Leipzig & Institute of Classical Studies)](https://sunoikisisdc.github.io/) - An open-access master's-level courseware series providing video tutorials and practical exercises in epigraphic analysis, papyrological transcription, and EpiDoc XML encoding.
+
+Epigraphic Methodology: [The Study of Greek Inscriptions by A. G. Woodhead (Cambridge University Press)](https://books.google.com/books?isbn=9780521298605) - The foundational methodological introduction to the physical layout, letter forms, dating criteria, restoration techniques, and historical use of Greek stone inscriptions.
+
+Documentary & Literary Papyrology: [The Oxford Handbook of Papyrology, edited by Roger S. Bagnall (Oxford University Press)](https://books.google.com/books?isbn=9780199843695) - A comprehensive guide to the discovery, physical preservation, decipherment, and historical evaluation of Greek papyrus documents and literary fragments from Egypt.
+
+Greek Palaeography: [Greek Paleography: From Antiquity to the Renaissance (Biblioteca Apostolica Vaticana)](https://spotlight.vatlib.it/greek-paleography) - A free, structured online course illustrated with high-resolution Vatican manuscript plates covering majuscule scripts, the minuscule bookhand revolution, Perlschrift, ligatures, and Byzantine scribal hands.
+
+Manuscript Transmission: [Scribes and Scholars: A Guide to the Transmission of Greek and Latin Literature by L. D. Reynolds and N. G. Wilson (Oxford University Press)](https://books.google.com/books?isbn=9780199686339) - The definitive survey of how ancient texts survived antiquity through Byzantine scholarship, monastic scriptoria, and Renaissance editorial recoveries.
 
 ## Classical Historiography, Rhetoric, and Political Thought
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Advanced Historiography & Narrative Method | Analyzes the narrative structures, historical methodologies, and political agendas in Herodotus, Thucydides, Polybius, and Imperial historians like Cassius Dio and Arrian. | - Simon Hornblower, *A Commentary on Thucydides*, Vols. I–III (Oxford University Press)<br>- John Marincola, *Authority and Tradition in Ancient Historiography* (Cambridge University Press)<br>- F. W. Walbank, *A Historical Commentary on Polybius*, Vols. I–III (Oxford Clarendon Press) |
-| Attic Oratory & Rhetorical Theory | Investigates the legal frameworks, political disputes, and argumentative topoi in Demosthenes, Aeschines, and Lysias alongside systematic rhetorical treatises. | - Stephen Usher, *Greek Oratory: Tradition and Originality* (Oxford University Press)<br>- Ian Worthington (ed.), *A Companion to Greek Rhetoric* (Wiley-Blackwell)<br>- Aristotle, *Ars Rhetorica* (ed. W. D. Ross, Oxford Classical Texts) |
-| Philosophical Commentaries & Late Antique Exegesis | Explores how classical Platonic and Aristotelian philosophy was synthesized, debated, and systematized by Neoplatonist commentators and late antique schools. | - Richard Sorabji (ed.), *The Philosophy of the Commentators, 200–600 AD: A Sourcebook*, Vols. 1–3 (Cornell University Press)<br>- Ancient Commentators on Aristotle Series (King's College London / Bloomsbury Academic) |
+Examines historical narrative architecture, judicial and deliberative oratorical style, classical rhetorical theory, and the post-classical philosophical tradition.
+
+Advanced Historiography & Narrative Method: [Greek Historians by John Marincola (Oxford University Press)](https://books.google.com/books?isbn=9780199225019) - A concise, advanced analysis of the differing narrative conventions, authorial personas, speech-making practices, and historical methods of Herodotus, Thucydides, and Polybius.
+
+Forensic & Deliberative Oratory: [Demosthenes: On the Crown, edited by Harvey Yunis (Cambridge University Press)](https://books.google.com/books?isbn=9780521629300) - An advanced Green-and-Yellow commentary on the pinnacle of classical Attic rhetorical prose, offering in-depth analysis of fourth-century legal procedure, political invective, and complex periodic syntax.
+
+Classical Rhetorical Theory: [Aristotle: On Rhetoric: A Theory of Civic Discourse, translated with commentary by George A. Kennedy (Oxford University Press)](https://books.google.com/books?isbn=9780195325089) - The primary ancient treatise on persuasive discourse, accompanied by an extensive modern commentary elucidating rhetorical genres, artistic proofs, and stylistic figures.
+
+Ancient Philosophical Traditions: [The History of Philosophy Without Any Gaps: Classical & Hellenistic Philosophy by Peter Adamson (LMU Munich / King's College London)](https://historyofphilosophy.net/) - A comprehensive, free open audio lecture series covering the continuous evolution of ancient philosophical argument from the Presocratics through the Hellenistic schools to late antique Neoplatonism.
 
 ## Post-Classical, Koine, and Byzantine Greek
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Hellenistic Koine & Septuagintal Greek | Studies the simplification of classical nominal and verbal syntax, semantic shifts, and Semitic lexical influences across Hellenistic documentary prose, the Septuagint, and the New Testament. | - F. Blass, A. Debrunner, and R. W. Funk, *A Greek Grammar of the New Testament and Other Early Christian Literature* (University of Chicago Press)<br>- F. C. Conybeare and St. George Stock, *Grammar of Septuagint Greek* (Hendrickson Publishers)<br>- Moisés Silva, *Biblical Words and Their Meaning: An Introduction to Lexical Semantics* (Zondervan) |
-| Second Sophistic & Imperial Prose | Focuses on the conscious Atticizing cultural and linguistic revival under the Roman Empire seen in Lucian, Plutarch, Pausanias, Aelius Aristides, and the ancient Greek novel. | - Tim Whitmarsh, *The Second Sophistic* (Oxford University Press / Greece & Rome Surveys)<br>- Simon Swain, *Hellenism and Empire: Language, Classicism, and Power in the Greek World AD 50–250* (Oxford University Press)<br>- [Perseus Imperial Greek Authors Collection](https://www.perseus.tufts.edu/hopper/) |
-| Byzantine Greek Philology | Investigates the multilingualism and diglossia of the Eastern Roman Empire, contrasting high-register Atticizing court prose with liturgical hymnography and vernacular medieval Greek. | - Geoffrey Horrocks, *Greek: A History of the Language and Its Speakers* (Chapters 10–14, Wiley-Blackwell)<br>- Robert Browning, *Medieval and Modern Greek* (Cambridge University Press)<br>- [Dumbarton Oaks Byzantine Text and Research Portal](https://www.doaks.org/research/byzantine) |
+Analyzes the structural evolution of the language from Hellenistic Koine and the Imperial Second Sophistic through high-register and vernacular Byzantine Greek.
+
+Hellenistic Koine & New Testament Greek: [A Greek Grammar of the New Testament and Other Early Christian Literature by F. Blass, A. Debrunner, and Robert W. Funk (University of Chicago Press)](https://books.google.com/books?isbn=9780226058221) - The authoritative reference grammar detailing phonological simplifications, case syncopation, verbal aspect changes, and Semitic lexical influences across Hellenistic Greek.
+
+Second Sophistic & Imperial Prose: [The Second Sophistic by Tim Whitmarsh (Oxford University Press)](https://books.google.com/books?isbn=9780198568810) - An essential survey of the Imperial-era cultural and linguistic movement that self-consciously revived classical Attic Greek in the rhetoric, biography, and fiction of the Roman Empire.
+
+Diachronic History of the Greek Language: [Greek: A History of the Language and Its Speakers by Geoffrey Horrocks (Wiley-Blackwell)](https://books.google.com/books?isbn=9781405134156) - A comprehensive linguistic history tracking the phonetic, morphological, and syntactic evolution of Greek from Bronze Age Linear B through the Koine and Byzantine periods to the modern language.
+
+Medieval & Byzantine Greek: [Medieval and Modern Greek by Robert Browning (Cambridge University Press)](https://books.google.com/books?isbn=9780521299787) - A classic monograph tracing the emergence of medieval Greek diglossia, phonological leveling, the loss of the infinitive, and the development of early vernacular Byzantine literature.
